@@ -1,10 +1,10 @@
-import Header from './components/Header';
+// import Header from './components/Header';
+import Slide1 from "./components/Slide1.jsx";
 
 function App() {
-
   return (
     <div className="App">
-      <Header />
+      <Slide1/>
     </div>
   );
 }
