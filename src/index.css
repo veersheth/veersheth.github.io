@@ -5,10 +5,23 @@
 /* NUNITO */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 
+:root {
+    --background-color-primary: #2d2d2d;
+    --background-color-secondary: rgb(61, 61, 61);
+    --color-primary: white;
+    --color-secondary: rgb(211, 211, 211);
+}
+
+/*  
+---
+---
+---
+---
+*/
 
 body {
-  background-color: rgb(76, 0, 255);
-  color: white;
+  background-color: var(--background-color-primary);
+  color: var(--color-primary);
   font-family: 'Nunito';
   letter-spacing: 0.7px;
   text-align: center;
@@ -25,7 +38,29 @@ body {
   box-shadow: -10px -10px 30px 2px rgba(221, 221, 221, 0.097), 15px 15px 20px 10px rgba(0, 0, 0, 0.36); 
 }
 
-.rainbow {
+.neu-in {
+  border-radius: 35px;
+  transition: 0.2s ease-in-out;
+  box-shadow: -10px -10px 30px 2px rgba(221, 221, 221, 0), 15px 15px 20px 10px rgba(0, 0, 0, 0), -10px -10px 20px 2px rgba(221, 221, 221, 0.108) inset, 15px 15px 20px 10px rgba(0, 0, 0, 0.266) inset; 
+}
+
+@keyframes neu-in-lift {
+  0% {
+    box-shadow: -10px -10px 30px 2px rgba(221, 221, 221, 0), 15px 15px 20px 10px rgba(0, 0, 0, 0), -10px -10px 20px 2px rgba(221, 221, 221, 0.108) inset, 15px 15px 20px 10px rgba(0, 0, 0, 0.266) inset; 
+  }
+  100%{
+    box-shadow: -10px -10px 30px 2px rgba(221, 221, 221, 0.185), 15px 15px 20px 10px rgba(0, 0, 0, 0.322), -10px -10px 20px 2px rgba(221, 221, 221, 0) inset, 15px 15px 20px 10px rgba(0, 0, 0, 0) inset; 
+  }
+}
+
+.neu-in:hover {
+  transform: scale(1.05);
+  animation: neu-in-lift 0.2s ease-out;
+  box-shadow: -10px -10px 30px 2px rgba(221, 221, 221, 0.185), 15px 15px 20px 10px rgba(0, 0, 0, 0.322), -10px -10px 20px 2px rgba(221, 221, 221, 0) inset, 15px 15px 20px 10px rgba(0, 0, 0, 0) inset; 
+}
+
+
+.RGB {
   background-image: linear-gradient(to right, #29ff8d, rgb(38, 254, 240), #9c66ff, #e738e7);
   -webkit-background-clip: text;
   background-clip: text;
@@ -37,5 +72,5 @@ body {
 
 .grow {
   transition: 0.2s ease-out;
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
