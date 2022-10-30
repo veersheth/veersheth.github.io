@@ -27,7 +27,7 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  overflow: scroll;
+  overflow: none;
 
   margin: 0;
   padding: 0;
