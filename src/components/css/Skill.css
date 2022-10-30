@@ -1,0 +1,24 @@
+.skill {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 80%;
+}
+
+.skill-header {
+    padding: 10% 0;
+    text-align: right;
+}
+
+.skill h1 {
+    color: var(--color-primary);
+    font-size: 5rem;
+    width: 300px;
+}
+
+.skill-content {
+    color: var(--color-secondary);
+    text-align: left;
+    margin-left: 3em;
+}
