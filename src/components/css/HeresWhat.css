@@ -15,3 +15,7 @@
     margin: auto;
     border-radius: 35px;
 }
+
+.down-arrow a {
+    color: var(--color-primary);
+}

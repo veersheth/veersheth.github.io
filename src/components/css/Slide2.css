@@ -1,0 +1,6 @@
+.slide2 {
+    height: 70vh;
+    border-radius: 30px;
+    background-color: var(--background-color-secondary);
+    margin: 0 40px 20px;
+}
