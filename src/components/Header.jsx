@@ -5,7 +5,7 @@ function Header(){
     return (
         <div className="header neu-out">
             <h1 className="RGB">Hi, I'm Veer</h1>
-            <h3>I'm a Student, Digital Artist, Web Developer and Programmer</h3>
+            <h2 className="about-more">I'm a Student, Digital Artist, Web Developer and Programmer</h2>
         </div>
     )
 }
