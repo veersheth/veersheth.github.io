@@ -67,7 +67,7 @@ body {
 
 span {
   animation-duration: 0.5s;
-  animation-timing-function: ease ;
+  animation-timing-function: bounce ;
   animation-iteration-count: 1;
   white-space: pre-wrap;
   word-wrap: break-word;
@@ -75,28 +75,17 @@ span {
 }
 
 @keyframes animateh1 {
-  /* 
-    THIS WAS THE BOUNCE ANIMATION
-  20%, 50%, 80%, to {
-    transform: scale(1,1);
-  }
-  40%, 45%{
-    transform: scale(1.75, 0.65);
-  }
-  60% {
-    transform: scale(1.25, 0.75);
-  }
-  90% {
-    transform: scale(1.15, 0.85);
-  } */
-
   50% {
     transform: scale(1.25, 0.75);
-  }
-
+    color: white;
+    text-shadow:0 0 10px rgba(255, 255, 255, 0.438),
+                0 0 20px rgba(255, 255, 255, 0.438), 
+                0 0 40px rgba(255, 255, 255, 0.438);  
+  }  
   100% {
-    transform: scale(1);
-    /* transform: skewX(0); */
+      transform: scale(1,1);
+      color: var(--color-primary);
+      text-shadow: none;
   }
 }
 
