@@ -7,18 +7,24 @@
 }
 
 .skill-header {
-    padding: 10% 0;
+    /* padding: 10% 0; */
     text-align: right;
+    width: 50%;
+    min-width: 175px;
+    padding-right: 3em;
 }
 
 .skill h1 {
     color: var(--color-primary);
-    font-size: 5rem;
-    width: 300px;
+    font-size: 3rem;
+    margin: 0.2em auto;
+    width: auto;
 }
 
 .skill-content {
     color: var(--color-secondary);
+    width: 50%;
     text-align: left;
-    margin-left: 3em;
+    line-height: 30px;
+    /* margin: auto; */
 }

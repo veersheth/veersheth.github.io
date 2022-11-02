@@ -66,10 +66,12 @@ body {
 }
 
 span {
-  display: inline-block;
   animation-duration: 0.5s;
   animation-timing-function: ease;
   animation-iteration-count: 1;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  display: inline-block;
 }
 
 @keyframes bounce {
@@ -90,6 +92,7 @@ span {
 .bounce-now {
   animation-name: bounce;
 }
+
 .RGB {
   color: var(--accent-color);
   /* background: -webkit-linear-gradient(rgb(255, 38, 38), rgb(147, 2, 244));
