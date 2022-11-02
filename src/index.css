@@ -67,14 +67,16 @@ body {
 
 span {
   animation-duration: 0.5s;
-  animation-timing-function: ease;
+  animation-timing-function: ease ;
   animation-iteration-count: 1;
   white-space: pre-wrap;
   word-wrap: break-word;
   display: inline-block;
 }
 
-@keyframes bounce {
+@keyframes animateh1 {
+  /* 
+    THIS WAS THE BOUNCE ANIMATION
   20%, 50%, 80%, to {
     transform: scale(1,1);
   }
@@ -86,11 +88,20 @@ span {
   }
   90% {
     transform: scale(1.15, 0.85);
+  } */
+
+  50% {
+    transform: scale(1.25, 0.75);
+  }
+
+  100% {
+    transform: scale(1);
+    /* transform: skewX(0); */
   }
 }
 
-.bounce-now {
-  animation-name: bounce;
+.h1-animate {
+  animation-name: animateh1;
 }
 
 .RGB {

@@ -26,12 +26,12 @@ function spanHeaders(){
     document.querySelectorAll("span").forEach(span => {
         span.addEventListener( "mouseover", () => {
             console.log("hover");
-            span.classList.add("bounce-now")
+            span.classList.add("h1-animate")
             setTimeout(function() {
-              span.classList.remove("bounce-now")
+              span.classList.remove("h1-animate")
               //your code to be executed after 1 second
             }, 700);
-            // span.classList.toggle("bounce-now")
+            // span.classList.toggle("h1-animate")
         })
     })
   }

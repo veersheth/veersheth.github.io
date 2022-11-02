@@ -7,9 +7,9 @@
 }
 
 .skill-header {
-    /* padding: 10% 0; */
+    padding: 0.5em 0;
     text-align: right;
-    width: 50%;
+    width: 30%;
     min-width: 175px;
     padding-right: 3em;
 }
@@ -23,7 +23,7 @@
 
 .skill-content {
     color: var(--color-secondary);
-    width: 50%;
+    width: 70%;
     text-align: left;
     line-height: 30px;
     /* margin: auto; */
