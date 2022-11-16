@@ -1,3 +1,10 @@
+const cursor = new MouseFollower({
+    // container: '.header',
+    speed: 0.5,
+    textClassName: 'mf-cursor-text',
+    className: 'mf-cursor',
+});
+
 function spanHeaders(){
     const myHeaders = document.querySelectorAll("h1")
   
@@ -28,9 +35,8 @@ function spanHeaders(){
         })
     })
   }
-
-
-// timeout helps the functions run since they have problems running on startup
-setTimeout(function() {
-  spanHeaders()
-}, 500);
+  
+//   the function does not run by itself no matter which .js file I place it at, so this function was made to run it after a half second
+  setTimeout(function() {
+    spanHeaders()
+  }, 500);
