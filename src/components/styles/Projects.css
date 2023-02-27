@@ -2,7 +2,7 @@
     background-color: var(--bg-prim);
     text-align: center;
     padding-top: 6vh;
-   height: 100vh;
+    height: 100vh;  
 }
 
 #projects h1 {
@@ -10,9 +10,16 @@
 }
 
 .project-list {
-    height: 85vh;
-    display: flex;
-    list-style: none;
+    /* height: 85vh; */
+    list-style-type: none;
+    display: grid;
+    grid-template-rows: min-content;
+    grid-auto-flow: column;
+
     overflow-x: scroll;
+    overscroll-behavior-inline: contain;
 }
 
+.snaps-inline {
+    scroll-snap-type: inline mandsatory;
+}

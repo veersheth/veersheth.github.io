@@ -40,6 +40,38 @@ const ProjectList = [
         imageAlt: "Python App Launcher",
         content: "Brutally minimal app launcher based on tKinter, Python",
         link: "https://github.com/veer258/python-app-launcher"
+    },
+    {
+        id: 5,
+        header: "Python App Launcher",
+        imageSrc: imgPythonAppLauncher,
+        imageAlt: "Python App Launcher",
+        content: "Brutally minimal app launcher based on tKinter, Python",
+        link: "https://github.com/veer258/python-app-launcher"
+    },
+    {
+        id: 6,
+        header: "Python App Launcher",
+        imageSrc: imgPythonAppLauncher,
+        imageAlt: "Python App Launcher",
+        content: "Brutally minimal app launcher based on tKinter, Python",
+        link: "https://github.com/veer258/python-app-launcher"
+    },
+    {
+        id: 7,
+        header: "Python App Launcher",
+        imageSrc: imgPythonAppLauncher,
+        imageAlt: "Python App Launcher",
+        content: "Brutally minimal app launcher based on tKinter, Python",
+        link: "https://github.com/veer258/python-app-launcher"
+    },
+    {
+        id: 8,
+        header: "Python App Launcher",
+        imageSrc: imgPythonAppLauncher,
+        imageAlt: "Python App Launcher",
+        content: "Brutally minimal app launcher based on tKinter, Python",
+        link: "https://github.com/veer258/python-app-launcher"
     }
 ];
 
@@ -47,7 +79,7 @@ const Projects = () => {
     return (
         <section id='projects'>
             <h1>Notable Projects</h1>
-            <ul className="project-list">
+            <ul className="project-list snaps-inline">
                 {ProjectList.map((item) => (
                     <li>
                         <Project 

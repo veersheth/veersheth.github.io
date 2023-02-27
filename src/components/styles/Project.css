@@ -1,6 +1,6 @@
  .project {
-    width: 50vh;
-    margin: 40px 30px;
+    width: 30vh;
+    margin: 10px 1rem;
     padding: 20px;
     border-radius: 30px;
     background-color: var(--bg-secn);
