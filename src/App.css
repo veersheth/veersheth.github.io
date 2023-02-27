@@ -2,9 +2,9 @@
 
 /* variables */
 :root {
-    --bg-prim: #dfdfdf;
-    --bg-secn: #e7e7e7;
-    --acc-prim: #101010;
+    --bg-prim: rgb(222, 222, 222);
+    --bg-secn: rgb(232, 232, 232);
+    --acc-prim: rgb(16, 16, 16);
 }
 
 /* CSS reset */
@@ -23,7 +23,7 @@ body {
     line-height: 1.4;
     font-size: 0.95em;
     color: var(--acc-prim);
-    background-color: var(--bg-prim);
+    background-color: var(--bg-prim);   
 }
 
 h1 {

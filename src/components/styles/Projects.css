@@ -1,6 +1,18 @@
-#Projects {
+#projects {
     background-color: var(--bg-prim);
     text-align: center;
-    padding-top: 1.75em;
-    height: 100vh;
+    padding-top: 6vh;
+   height: 100vh;
 }
+
+#projects h1 {
+    height: 9vh
+}
+
+.project-list {
+    height: 85vh;
+    display: flex;
+    list-style: none;
+    overflow-x: scroll;
+}
+

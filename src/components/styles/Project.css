@@ -1,0 +1,20 @@
+ .project {
+    width: 50vh;
+    margin: 40px 30px;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: var(--bg-secn);
+    text-align: center;
+}
+
+.project img {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.project .content {
+    align-items: center;
+    padding: 10px;
+}
