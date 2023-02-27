@@ -1,0 +1,36 @@
+
+#landing-page {
+    background-color: #ffffff00;
+    height: 100vh;
+}
+
+.welcome-div {
+    width: 45%; 
+    max-width: 600px;
+    margin: 0 auto; /* Center the container horizontally */
+    position: relative; /* Required for absolute positioning */
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.75em;
+
+    
+    background-color: var(--bg-secn);
+    color: --var(--acc-prim);
+    border-radius: 20px;
+
+    box-shadow: 0 0 20px 20px #00000018;
+}
+
+.welcome-div h1 {
+    margin: 0px auto 5px;
+}
+
+.welcome-div p {
+    margin: 5px auto 0px
+}

@@ -1,0 +1,39 @@
+#about-me {
+    background-color: var(--bg-prim);
+    text-align: center;
+    padding-top: 4vh;
+    min-height: 100vh;
+}
+
+#about-me h1 {
+    height: 6vh;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    min-height: 60vh;
+}
+
+
+/* SKILL SPECIFIC STYLES */
+
+.student {
+    transform: rotate(2deg);
+}
+
+.webdev {
+    transform: rotate(-1.5deg);
+}
+
+.programmer {
+    transform: rotate(-1deg);
+}
+
+.artist {
+    transform: rotate(2deg);
+}

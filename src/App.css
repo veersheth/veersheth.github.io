@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Sen:wght@400;700&display=swap');
+
+/* variables */
+:root {
+    --bg-prim: #dfdfdf;
+    --bg-secn: #e7e7e7;
+    --acc-prim: #101010;
+}
+
+/* CSS reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1.05em;
+}  
+
+body {
+    margin: 0;
+    padding: 10;
+
+    font-family: Sen, sans-serif;
+    line-height: 1.4;
+    font-size: 0.95em;
+    color: var(--acc-prim);
+    background-color: var(--bg-prim);
+}
+
+h1 {
+    font-size: 1.9em;
+}

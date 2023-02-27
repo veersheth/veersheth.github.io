@@ -1,0 +1,8 @@
+.skill {
+    background-color: var(--bg-secn);
+    border-radius: 20px;
+    margin: 40px 20px;
+    max-width: 550px;
+    padding: 20px 40px;
+    text-align: center;
+}
