@@ -11,6 +11,7 @@
     position: relative; /* Required for absolute positioning */
     top: 50%;
     transform: translateY(-50%);
+    transition: transform 200ms ease;
 
     display: flex;
     flex-direction: column;
@@ -33,4 +34,27 @@
 
 .welcome-div p {
     margin: 5px auto 0px
+}
+
+.welcome-div:hover {
+    transform: scale(1.01) translateY(-50%);
+}
+
+.welcome-div:active{
+    animation: say-hi 500ms ease forwards;
+}
+
+@keyframes say-hi {
+    0%{
+        transform: translateY(-50%) skewX(0deg);
+    }
+    33% {
+        transform: translateY(-50%) skewX(-10deg);
+    }
+    66% {
+        transform: translateY(-50%) skewX(10deg);
+    }
+    100% {
+        transform: translateY(-50%) skewX(0deg) scale(1.01);
+    }
 }
