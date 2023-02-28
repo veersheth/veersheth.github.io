@@ -7,7 +7,7 @@ function cursorFunc() {
             y = e.clientY - trailer.offsetHeight / 2;
 
             const moveframes = {
-                transform: `translate(${x}px, ${y}px) scale(${interacting ? 4 : 1})`,
+                transform: `translate(${x}px, ${y}px) scale(${interacting ? 6 : 1})`,
                 opacity:0.8
             }
 

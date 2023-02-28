@@ -2,8 +2,11 @@ import React from 'react';
 import './styles/Project.css'
 
 const Project = (props) => {
+
+    const mysvg = "<svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'> <path d='M 212.493 128.584 L 356.493 128.584 C 369.793 128.584 380.493 139.284 380.493 152.584 L 380.493 296.584 C 380.493 306.284 374.693 315.084 365.693 318.784 C 356.693 322.484 346.393 320.484 339.493 313.584 L 300.493 274.584 L 213.493 361.584 C 204.093 370.984 188.893 370.984 179.593 361.584 L 147.593 329.584 C 138.193 320.184 138.193 304.984 147.593 295.684 L 234.593 208.684 L 195.493 169.584 C 188.593 162.684 186.593 152.384 190.293 143.384 C 193.993 134.384 202.793 128.584 212.493 128.584 Z'/>  </svg>"
+
     return (
-        <div className='interactable project' link={props.link} data-hover="<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d='M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h94.1L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135V328c0 13.3 10.7 24 24 24s24-10.7 24-24V168c0-13.3-10.7-24-24-24H160z'/></svg>">
+        <div className='interactable project' link={props.link} data-hover={mysvg}>
                 <img src={props.image} alt={props.alt} />
                 <div className='content'>
                     <h2>{props.header}</h2>
