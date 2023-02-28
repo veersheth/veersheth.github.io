@@ -1,12 +1,20 @@
 #projects {
     background-color: var(--bg-prim);
-    text-align: center;
+    align-items: center;
     padding-top: 6vh;
     height: 100vh;  
 }
 
 #projects h1 {
-    height: 9vh
+    height: 5vh
+}
+
+.project-list-container {
+    display: flex;
+    height: 85vh;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.95);
 }
 
 .project-list {
@@ -16,10 +24,12 @@
     grid-template-rows: min-content;
     grid-auto-flow: column;
 
-    overflow-x: scroll;
-    overscroll-behavior-inline: contain;
+    overflow-x: auto;
+    /* overflow-y: hidden; */
+    /* overscroll-behavior-inline: contain; */
 }
 
 .snaps-inline {
-    scroll-snap-type: inline mandsatory;
+    scroll-snap-align: start;
+    scroll-snap-type: x mandatory;
 }

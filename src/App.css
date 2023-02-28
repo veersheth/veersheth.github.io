@@ -1,19 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Sen:wght@400;700&display=swap');
 
-/* variables */
+/* VARIABLES */
 :root {
-    --bg-prim: rgb(222, 222, 222);
-    --bg-secn: rgb(232, 232, 232);
+    --bg-prim: rgb(225, 225, 225);
+    --bg-secn: rgb(238, 238, 238);
+    --bg-tert: rgb(240, 240, 240);
     --acc-prim: rgb(16, 16, 16);
+    --acc-secn: rgba(0, 0, 0, 0.355);
 }
 
-/* CSS reset */
+/* SCROLLBARS */
+
+::-webkit-scrollbar {
+    width: 7px; /* width of the scrollbar */
+    height: 0px;
+}
+
+
+/* Set the styles for the thumb */
+::-webkit-scrollbar-thumb {
+background-color: var(--acc-secn); /* color of the thumb */
+border-radius: 5px; /* rounded corners for the thumb */
+}
+
+/* Set the styles for the track */
+::-webkit-scrollbar-track {
+background-color: var(--bg-prim); /* color of the track */
+}
+
+/* CSS RESET */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-size: 1.05em;
 }  
+
+/* MAIN CSS */
 
 body {
     margin: 0;
@@ -28,4 +51,10 @@ body {
 
 h1 {
     font-size: 1.9em;
+}
+
+section {
+    text-align: center;
+    scroll-snap-align: start;
+    scroll-snap-type: mandatory;
 }

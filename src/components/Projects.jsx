@@ -3,10 +3,10 @@ import "./styles/Projects.css"
 
 import Project from "./Project.jsx"
 
-import imgKeeper from "../projects/keeper.png"
-import imgPysswordManager from "../projects/pyssword-manager.png"
-import imgPythonAppLauncher from "../projects/python-app-launcher.png"
-import imgTheBrownFox from "../projects/the-brown-fox.png"
+import imgKeeper from "../images/projects/keeper.png"
+import imgPysswordManager from "../images/projects/pyssword-manager.png"
+import imgPythonAppLauncher from "../images/projects/python-app-launcher.png"
+import imgTheBrownFox from "../images/projects/the-brown-fox.png"
 
 const ProjectList = [
     {
@@ -79,19 +79,22 @@ const Projects = () => {
     return (
         <section id='projects'>
             <h1>Notable Projects</h1>
-            <ul className="project-list snaps-inline">
-                {ProjectList.map((item) => (
-                    <li>
-                        <Project 
-                        key={item.id}
-                        header={item.header}
-                        content={item.content}
-                        image={item.imageSrc}
-                        alt={item.imageAlt}
-                        />
-                    </li>
-                ))}
-            </ul>
+            <div className="project-list-container">
+                <ul className="project-list snaps-inline">
+                    {ProjectList.map((item) => (
+                        <li>
+                            <Project 
+                            key={item.id}
+                            header={item.header}
+                            content={item.content}
+                            image={item.imageSrc}
+                            alt={item.imageAlt}
+                            />
+                        </li>
+                    ))}
+                </ul>
+            </div>
+          
         </section>
     );
 };
