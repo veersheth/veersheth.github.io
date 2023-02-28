@@ -7,26 +7,33 @@
     --bg-tert: rgb(240, 240, 240);
     --acc-prim: rgb(16, 16, 16);
     --acc-secn: rgba(0, 0, 0, 0.355);
+    --trailer: rgb(0, 0, 0);
 }
 
 /* SCROLLBARS */
 
-::-webkit-scrollbar {
-    width: 7px; /* width of the scrollbar */
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--bg-prim) var(--acc-prim);
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
     height: 0px;
-}
+  }
 
+  *::-webkit-scrollbar-track {
+    background:var(--bg-prim);
+  }
 
-/* Set the styles for the thumb */
-::-webkit-scrollbar-thumb {
-background-color: var(--acc-secn); /* color of the thumb */
-border-radius: 5px; /* rounded corners for the thumb */
-}
-
-/* Set the styles for the track */
-::-webkit-scrollbar-track {
-background-color: var(--bg-prim); /* color of the track */
-}
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--acc-prim);
+    border-radius: 10px;
+    border: 3px solid var(--bg-prim);
+  }
 
 /* CSS RESET */
 * {

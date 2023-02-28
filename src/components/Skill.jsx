@@ -3,7 +3,7 @@ import "./styles/Skill.css"
 
 const Skill = (props) => {
     return (
-        <li className={`skill ${props.className}`}>
+        <li className={`skill ${props.className}`} data-hover={props.hover}>
             <h2>{props.heading}</h2>
             <p>{props.content}</p>
         </li>

@@ -21,6 +21,13 @@
 #contact > * {
     margin: 0.75em;
     cursor: pointer;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+#contact >*:hover{
+    transform:scale(1.1);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.152);
 }
 
 .email {

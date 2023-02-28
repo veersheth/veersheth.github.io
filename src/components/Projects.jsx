@@ -84,7 +84,6 @@ const Projects = () => {
                     {ProjectList.map((item) => (
                         <li>
                             <Project 
-                            key={item.id}
                             header={item.header}
                             content={item.content}
                             image={item.imageSrc}

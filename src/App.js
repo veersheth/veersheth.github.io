@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
+import "./components/styles/Cursor.css"
 
 import LandingPage from "./components/LandingPage";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
-import Footer from "./components/Footer.jsx"
-
+import Footer from "./components/Footer.jsx";
 
 function App() {
   return (
