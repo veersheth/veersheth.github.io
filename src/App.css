@@ -26,8 +26,6 @@
 }
 
 /* SCROLLBARS */
-
-/* ===== Scrollbar CSS ===== */
   /* Firefox */
   * {
     scrollbar-width: thin;
@@ -79,4 +77,8 @@ section {
     text-align: center;
     scroll-snap-align: start;
     scroll-snap-type: mandatory;
+}
+
+a {
+  text-decoration: none;
 }

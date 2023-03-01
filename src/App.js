@@ -7,13 +7,13 @@ import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer.jsx";
 
-import DarkMode from "./components/ThemeToggle/DarkMode";
+import ColorThemeToggle from "./components/ColorThemeToggle";
 
 function App() {
   return (
     <div className="App">
 
-        <DarkMode />
+        <ColorThemeToggle />
 
         <LandingPage />
         <AboutMe />

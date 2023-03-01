@@ -1,0 +1,39 @@
+.theme-toggle {
+    z-index: 20;
+    margin: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--bg-tert);
+    color: var(--acc-prim);
+    border: none;
+    border-radius: 1em;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.207);
+
+    padding: 0.5em;
+
+    transition: transform 100ms ease, box-shadow 100ms ease;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.4);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.096);
+}
+
+.theme-toggle:active {
+    transform:scale(1.2);
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.692);
+}
+
+.theme-toggle > * {
+    transition: transform 100ms ease;
+}
+
+.theme-toggle:active > * {
+    transform: rotate(20deg)
+}
