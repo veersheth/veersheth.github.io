@@ -7,9 +7,13 @@ import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer.jsx";
 
+import DarkMode from "./components/ThemeToggle/DarkMode";
+
 function App() {
   return (
     <div className="App">
+
+        <DarkMode />
 
         <LandingPage />
         <AboutMe />
