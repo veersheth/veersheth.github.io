@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4317f987.css",
+    "main.js": "/static/js/main.faa040a7.js",
+    "static/media/keeper.png": "/static/media/keeper.e5f8397b434e2e480ec2.png",
+    "static/media/pyssword-manager.png": "/static/media/pyssword-manager.c5b0c6a82d5333290058.png",
+    "static/media/python-app-launcher.png": "/static/media/python-app-launcher.413f2722ac293cdfc453.png",
+    "static/media/the-brown-fox.png": "/static/media/the-brown-fox.611baf9c03d48d3f0192.png",
+    "index.html": "/index.html",
+    "main.4317f987.css.map": "/static/css/main.4317f987.css.map",
+    "main.faa040a7.js.map": "/static/js/main.faa040a7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4317f987.css",
+    "static/js/main.faa040a7.js"
+  ]
+}
