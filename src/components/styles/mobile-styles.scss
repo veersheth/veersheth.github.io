@@ -1,0 +1,35 @@
+@media only screen and (max-width: 600px) {
+    .trailer {
+        visibility: hidden;
+    }
+
+    .body {
+        font-size: 1.2em;
+    }
+
+    .welcome-div {
+        width: 90%;
+        height: 50%;
+        border-radius: 5em;
+    }
+
+    #contact {
+        height: 75%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-method .media-info {
+        position: inherit;
+        opacity: 1;
+
+        left: 0;
+        transform: translate(0%, 100%);
+        font-size: 1rem;
+        color: var(--acc-prim);
+        top: 0;
+    
+
+        visibility: visible;
+    }
+}

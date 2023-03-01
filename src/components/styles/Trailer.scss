@@ -2,7 +2,6 @@
 .trailer {
   min-height: 20px;
   min-width: 20px;
-  padding: 0.5%;
   background-color: var(--trailer);
   border-radius: 20rem;
   
@@ -12,16 +11,19 @@
   z-index: 10000;
   
   pointer-events: none;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 500ms ease, transform 200ms ease;
   
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 
   font-size: 0.5em;
+  backdrop-filter: blur(10px);
 }
 
 .App:hover > .trailer {
     opacity: 1;
   }
+

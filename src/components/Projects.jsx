@@ -11,12 +11,12 @@ import imgTheBrownFox from "../images/projects/the-brown-fox.png"
 const ProjectList = [
     {
         id: 1,
-        header: "Keeper App",
-        imageSrc: imgKeeper,
-        imageAlt: "Keeper App",
-        content: "Google Keep Clone App",
-        link: "https://github.com/veer258/keeper-app"
-    },
+        header: "The Brown Fox",
+        imageSrc: imgTheBrownFox,
+        imageAlt: "The Brown Fox Website",
+        content: "Clean and simple typing game",
+        link: "https://veer258.github.io/The-Brown-Fox/"
+        },
     {
         id: 2,
         header: "Pyssword Manager",
@@ -27,11 +27,11 @@ const ProjectList = [
     },
     {
         id: 3,
-        header: "The Brown Fox",
-        imageSrc: imgTheBrownFox,
-        imageAlt: "The Brown Fox Website",
-        content: "Clean and simple typing game",
-        link: "https://veer258.github.io/The-Brown-Fox/"
+        header: "Keeper App",
+        imageSrc: imgKeeper,
+        imageAlt: "Keeper App",
+        content: "Google Keep Clone App",
+        link: "https://github.com/veer258/keeper-app"
     },
     {
         id: 4,

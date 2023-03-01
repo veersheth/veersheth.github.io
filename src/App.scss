@@ -7,8 +7,9 @@
     --bg-tert: rgb(240, 240, 240);
     --acc-prim: rgb(16, 16, 16);
     --acc-secn: rgba(0, 0, 0, 0.355);
-    --trailer: rgb(255, 255, 255);
-    --trailer-color: rgb(231, 231, 231);
+    --trailer: black;
+    --trailer-color: white;
+    --svg-color: rgb(231, 231, 231);
 }
 
 [data-theme="dark"] {
@@ -17,8 +18,9 @@
   --bg-tert: rgb(73, 73, 73);
   --acc-prim: rgb(237, 237, 237);
   --acc-secn: rgba(237, 237, 237, 0.355);
-  --trailer: rgb(255, 255, 255);
-  --trailer-color: rgb(231, 231, 231);
+  --trailer: white;
+  --trailer-color: black;
+  --svg-color: rgb(50, 50, 50);
 }
 
 * {
@@ -81,4 +83,9 @@ section {
 
 a {
   text-decoration: none;
+}
+
+svg {
+  // height: 1.5em;
+  fill: var(--svg-color);
 }

@@ -8,10 +8,11 @@ import Projects from "./components/Projects";
 import Footer from "./components/Footer.jsx";
 
 import ColorThemeToggle from "./components/ColorThemeToggle";
+import "./components/styles/mobile-styles.scss"
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" data-theme="light">
 
         <ColorThemeToggle />
 
