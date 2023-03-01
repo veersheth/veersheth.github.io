@@ -85,6 +85,7 @@ const Projects = () => {
                         <li>
                             <Project 
                             header={item.header}
+                            link={item.link}
                             content={item.content}
                             image={item.imageSrc}
                             alt={item.imageAlt}

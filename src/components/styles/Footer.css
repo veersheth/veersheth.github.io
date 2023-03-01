@@ -71,7 +71,6 @@
     transition: transform 200ms ease, opacity 200ms ease;
     top: 0;
 
-    /* background-color: red; */
 }
 
 .contact-method:hover .media-info {

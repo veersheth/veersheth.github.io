@@ -7,7 +7,8 @@
     --bg-tert: rgb(240, 240, 240);
     --acc-prim: rgb(16, 16, 16);
     --acc-secn: rgba(0, 0, 0, 0.355);
-    --trailer: rgb(0, 0, 0);
+    --trailer: rgb(255, 255, 255);
+    --trailer-color: rgb(231, 231, 231);
 }
 
 /* SCROLLBARS */
