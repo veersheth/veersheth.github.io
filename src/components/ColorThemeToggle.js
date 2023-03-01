@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/ColorThemeToggle.css";
+import "./styles/ColorThemeToggle.scss";
 
 function ColorThemeToggle({ setDarkMode }) {
 

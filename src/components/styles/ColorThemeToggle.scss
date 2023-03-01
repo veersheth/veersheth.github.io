@@ -8,7 +8,7 @@
     color: var(--acc-prim);
     border: none;
     border-radius: 1em;
-    opacity: 0.8;
+    opacity: 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,5 +35,5 @@
 }
 
 .theme-toggle:active > * {
-    transform: rotate(20deg)
+    transform: scaleX(-1);
 }

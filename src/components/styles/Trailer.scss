@@ -15,8 +15,9 @@
   opacity: 0;
   transition: opacity 500ms ease, transform 200ms ease;
   
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   font-size: 0.5em;
 }

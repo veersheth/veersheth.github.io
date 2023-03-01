@@ -1,6 +1,6 @@
 import React from "react";
-import "./App.css";
-import "./components/styles/Trailer.css"
+import "./App.scss";
+import "./components/styles/Trailer.scss"
 
 import LandingPage from "./components/LandingPage";
 import AboutMe from "./components/AboutMe";
