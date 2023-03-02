@@ -58,3 +58,19 @@
         transform: translateY(-50%) skewX(0deg) scale(1.01);
     }
 }
+
+.hi-hand {
+    transition: transform 200ms linear;
+    animation: hand-waves 1000ms forwards;
+    // animation-fill-mode: both;
+}
+
+@keyframes hand-waves {
+    20% {
+        transform: rotate(-30deg) translateX(-0.2em);
+    }
+    60% {
+        transform: rotate(30deg) translateX(0.2em);
+    }
+
+}
