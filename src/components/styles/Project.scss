@@ -31,3 +31,25 @@
     align-items: center;
     padding: 10px;
 }
+
+
+.link-cursor-inner {
+    transition: transform 1000ms ease;
+    transform: scale(0.5);
+    animation: linkCursorGrowShrink 1000ms ease infinite;
+}
+
+@keyframes linkCursorGrowShrink {
+    0% {
+        transform: scale(0.5);
+    }
+    33% {
+        transform: scale(0.6)
+    }
+    66% {
+        transform: scale(0.3)
+    }
+    100% {
+        transform: scale(0.5);
+    }
+}
