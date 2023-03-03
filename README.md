@@ -1,4 +1,4 @@
-# veer258.github.io
+# [veer258.github.io](https://veer258.github.io/)
 - Hi, this is my personal portfolio website built with ReactJS and hosted on GitHub Pages
 - Resources
 	- https://fontawesome.com/
