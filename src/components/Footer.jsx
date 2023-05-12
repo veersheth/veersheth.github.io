@@ -9,8 +9,9 @@ const Contact = () => {
     return (
         <section id='footer'>
             <div id="contact">
-                <a href='mailto:vtube258@gmail.com?subject=;)'>
+                <a href='mailto:veerksheth@gmail.com?subject=;)'>
                 <div className="email contact-method ">
+                    <span className="media-info">veerksheth@gmail.com</span>
                     Email
                 </div>
                 </a>
