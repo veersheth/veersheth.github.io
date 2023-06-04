@@ -17,3 +17,88 @@
     padding: 0;
     min-height: 60vh;
 }
+
+.nerd-emoji {
+    transition: transform 1s linear;
+    animation: nerd-bobbing 0.75s infinite;
+}
+
+@keyframes nerd-bobbing {
+    0% {
+        transform: translateY(0%);
+    }
+    25% {
+        transform: translateY(10%);
+    }
+    50% {
+        transform: translateY(-30%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.globe-emoji {
+    transition: transform 1s linear;
+    animation: globe-spinning 0.75s infinite;
+}
+
+@keyframes globe-spinning {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.keyboard-emoji {
+    transition: transform 1s linear;
+    animation: keyboard-stretching 0.75s infinite;
+}
+
+@keyframes keyboard-stretching {
+    0% {
+        
+    }
+    25% {
+        transform: scaleX(1.75)
+
+    }
+    50% {
+        transform: scaleX(0.5)
+
+    }
+    100% {
+        transform: scale(1)
+    }
+}
+
+.paint-emoji {
+    transition: transform 1s linear;
+    animation: paint 1s infinite;
+}
+
+@keyframes paint {
+    0% {
+    }
+    25% {
+        // transform: rotate(30deg) scale(1.2);
+        transform: rotate(20deg) scale(1.1);
+
+    }
+    50% {
+        // transform: rotate(30deg) scale(1.2);
+        // transform: rotate(-20deg) scale(1.1);
+
+    }
+    
+    70% {
+        transform: rotate(-20deg) scale(0.9);
+
+    }
+    100% {
+
+    }
+}
