@@ -1,7 +1,7 @@
 $(window).on("load", function () {
     butter.init({
-        wrapperId: "butter",
-        wrapperDamper: 0.1,
+        wrapperId: "root",
+        wrapperDamper: 0.08,
         cancelOnTouch: false
     });
 });
