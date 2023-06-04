@@ -10,8 +10,7 @@ const Contact = () => {
         <section id='footer'>
             <div id="contact">
                 <a href='mailto:veerksheth@gmail.com?subject=;)'>
-                <div className="email contact-method ">
-                    <span className="media-info">veerksheth@gmail.com</span>
+                <div className="email ">
                     Email
                 </div>
                 </a>
