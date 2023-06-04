@@ -5,6 +5,7 @@
     --bg-prim: rgb(225, 225, 225);
     --bg-secn: rgb(238, 238, 238);
     --bg-tert: rgb(240, 240, 240);
+    --bg-acc: rgb(42, 163, 145);
     --acc-prim: rgb(16, 16, 16);
     --acc-secn: rgba(0, 0, 0, 0.355);
     --trailer: black;
@@ -69,6 +70,7 @@ body {
     font-size: 0.95em;
     color: var(--acc-prim);
     background-color: var(--bg-prim);   
+    opacity: 1;
 }
 
 h1 {

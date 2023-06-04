@@ -1,5 +1,4 @@
 #about-me {
-    background-color: var(--bg-prim);
     padding-top: 4vh;
     min-height: 100vh;
 }
@@ -60,18 +59,18 @@
 
 @keyframes keyboard-stretching {
     0% {
-        
+        transform: scale(1) translateY(-5%)
     }
     25% {
-        transform: scaleX(1.75)
+        transform: scaleX(1.3) translateY(-10%)
 
     }
     50% {
-        transform: scaleX(0.5)
+        transform: scaleX(0.85) translateY(-5%)
 
     }
     100% {
-        transform: scale(1)
+        transform: scale(1) translateY(-5%)
     }
 }
 
@@ -84,21 +83,9 @@
     0% {
     }
     25% {
-        // transform: rotate(30deg) scale(1.2);
         transform: rotate(20deg) scale(1.1);
-
     }
-    50% {
-        // transform: rotate(30deg) scale(1.2);
-        // transform: rotate(-20deg) scale(1.1);
-
-    }
-    
     70% {
-        transform: rotate(-20deg) scale(0.9);
-
-    }
-    100% {
-
+        transform: rotate(-10deg) scale(0.9);
     }
 }
