@@ -1,6 +1,6 @@
 $(window).on("load", function () {
     butter.init({
-        wrapperId: "root",
+        wrapperId: "butter",
         wrapperDamper: 0.08,
         cancelOnTouch: false
     });
