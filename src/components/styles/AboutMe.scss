@@ -83,9 +83,9 @@
     0% {
     }
     25% {
-        transform: rotate(20deg) scale(1.1);
+        transform: rotate(-20deg) scale(1.1);
     }
     70% {
-        transform: rotate(-10deg) scale(0.9);
+        transform: rotate(10deg) scale(0.9);
     }
 }

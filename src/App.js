@@ -20,7 +20,6 @@ function App() {
           <Projects />
           <Footer />
         </div>
-
     </div>
   );
 };
