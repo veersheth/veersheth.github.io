@@ -7,10 +7,19 @@ import imgKeeper from "../images/projects/keeper.png"
 import imgPysswordManager from "../images/projects/pyssword-manager.png"
 import imgPythonAppLauncher from "../images/projects/python-app-launcher.png"
 import imgTheBrownFox from "../images/projects/the-brown-fox.png"
+import imgFlutterChat from "../images/projects/imgFlutterChat.png"
 
 const ProjectList = [
     {
         id: 1,
+        header: "Flutter Chat",
+        imageSrc: imgFlutterChat,
+        imageAlt: "Flutter Chat Application",
+        content: "Group chat application based on Google's Material You design, built using Flutter and Firebase",
+        link: "https://github.com/veer258/Flutter_Chat"
+        },
+        {
+        id: 2,
         header: "The Brown Fox",
         imageSrc: imgTheBrownFox,
         imageAlt: "The Brown Fox Website",
@@ -18,7 +27,7 @@ const ProjectList = [
         link: "https://veer258.github.io/The-Brown-Fox/"
         },
     {
-        id: 2,
+        id: 3,
         header: "Pyssword Manager",
         imageSrc: imgPysswordManager,
         imageAlt: "Python Password Manager",
@@ -26,20 +35,12 @@ const ProjectList = [
         link: "https://github.com/veer258/pyssword-manager-cli"
     },
     {
-        id: 3,
+        id: 4,
         header: "Keeper App",
         imageSrc: imgKeeper,
         imageAlt: "Keeper App",
         content: "Google Keep Clone App",
         link: "https://github.com/veer258/keeper-app"
-    },
-    {
-        id: 4,
-        header: "Python App Launcher",
-        imageSrc: imgPythonAppLauncher,
-        imageAlt: "Python App Launcher",
-        content: "Brutally minimal app launcher based on tKinter, Python",
-        link: "https://github.com/veer258/python-app-launcher"
     },
     {
         id: 5,

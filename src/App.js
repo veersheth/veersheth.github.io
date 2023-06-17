@@ -6,6 +6,7 @@ import LandingPage from "./components/LandingPage";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer.jsx";
+import Background from "./components/Background.jsx";
 
 import ColorThemeToggle from "./components/ColorThemeToggle";
 import "./components/styles/mobile-styles.scss"
@@ -13,6 +14,7 @@ import "./components/styles/mobile-styles.scss"
 function App() {
   return (
     <div className="App" data-theme="light">
+        {/* <Background /> */}
         <ColorThemeToggle />
         <div id="butter">
           <LandingPage />
