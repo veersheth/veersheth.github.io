@@ -27,9 +27,13 @@
     border-radius: 20px;
 }
 
-.project .content {
+.project > .content {
     align-items: center;
     padding: 10px;
+}
+
+.project > .content > p{
+    font-size: 0.9em;
 }
 
 
