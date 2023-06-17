@@ -75,17 +75,14 @@
 }
 
 .paint-emoji {
-    transition: transform 1s linear;
+    transition: transform 2s linear;
     animation: paint 1s infinite;
 }
 
 @keyframes paint {
     0% {
-    }
-    25% {
-        transform: rotate(-20deg) scale(1.1);
-    }
-    70% {
-        transform: rotate(10deg) scale(0.9);
+        transform: rotateY(0deg);
+    }50% {
+        transform: rotateY(180deg);
     }
 }
