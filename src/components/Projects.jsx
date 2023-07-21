@@ -16,7 +16,7 @@ const ProjectList = [
         imageSrc: imgFlutterChat,
         imageAlt: "Flutter Chat Application",
         content: "Group chat application based on Google's Material You design, built using Flutter and Firebase",
-        link: "https://github.com/veer258/Flutter_Chat"
+        link: "https://github.com/veersheth/Flutter_Chat"
         },
         {
         id: 2,
@@ -24,7 +24,7 @@ const ProjectList = [
         imageSrc: imgTheBrownFox,
         imageAlt: "The Brown Fox Website",
         content: "Clean and simple typing game",
-        link: "https://veer258.github.io/The-Brown-Fox/"
+        link: "https://veersheth.github.io/The-Brown-Fox/"
         },
     {
         id: 3,
@@ -32,7 +32,7 @@ const ProjectList = [
         imageSrc: imgPysswordManager,
         imageAlt: "Python Password Manager",
         content: "Commandline Python Password Manager",
-        link: "https://github.com/veer258/pyssword-manager-cli"
+        link: "https://github.com/veersheth/pyssword-manager-cli"
     },
     {
         id: 4,
@@ -40,7 +40,7 @@ const ProjectList = [
         imageSrc: imgKeeper,
         imageAlt: "Keeper App",
         content: "Google Keep Clone App",
-        link: "https://github.com/veer258/keeper-app"
+        link: "https://github.com/veersheth/keeper-app"
     },
     {
         id: 5,
@@ -48,7 +48,7 @@ const ProjectList = [
         imageSrc: imgPythonAppLauncher,
         imageAlt: "Python App Launcher",
         content: "Brutally minimal app launcher based on tKinter, Python",
-        link: "https://github.com/veer258/python-app-launcher"
+        link: "https://github.com/veersheth/python-app-launcher"
     },
     {
         id: 6,
@@ -56,7 +56,7 @@ const ProjectList = [
         imageSrc: imgPythonAppLauncher,
         imageAlt: "Python App Launcher",
         content: "Brutally minimal app launcher based on tKinter, Python",
-        link: "https://github.com/veer258/python-app-launcher"
+        link: "https://github.com/veersheth/python-app-launcher"
     },
     {
         id: 7,
@@ -64,7 +64,7 @@ const ProjectList = [
         imageSrc: imgPythonAppLauncher,
         imageAlt: "Python App Launcher",
         content: "Brutally minimal app launcher based on tKinter, Python",
-        link: "https://github.com/veer258/python-app-launcher"
+        link: "https://github.com/veersheth/python-app-launcher"
     },
     {
         id: 8,
@@ -72,7 +72,7 @@ const ProjectList = [
         imageSrc: imgPythonAppLauncher,
         imageAlt: "Python App Launcher",
         content: "Brutally minimal app launcher based on tKinter, Python",
-        link: "https://github.com/veer258/python-app-launcher"
+        link: "https://github.com/veersheth/python-app-launcher"
     }
 ];
 

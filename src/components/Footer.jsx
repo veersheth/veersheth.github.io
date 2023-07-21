@@ -15,7 +15,7 @@ const Contact = () => {
                 </div>
                 </a>
                 
-                <a href='https://github.com/veer258'>
+                <a href='https://github.com/veersheth'>
                     <i class="social-media-icon contact-method fa-brands fa-github " >
                     <span className="media-info">GitHub</span>
                 </i>
