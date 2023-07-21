@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0e668ddc.css",
-    "main.js": "/static/js/main.b4a5f2a8.js",
+    "main.js": "/static/js/main.cca0501d.js",
     "static/media/imgFlutterChat.png": "/static/media/imgFlutterChat.b9d870e658a82f9c6147.png",
     "static/media/keeper.png": "/static/media/keeper.e5f8397b434e2e480ec2.png",
     "static/media/pyssword-manager.png": "/static/media/pyssword-manager.c5b0c6a82d5333290058.png",
@@ -9,10 +9,10 @@
     "static/media/the-brown-fox.png": "/static/media/the-brown-fox.611baf9c03d48d3f0192.png",
     "index.html": "/index.html",
     "main.0e668ddc.css.map": "/static/css/main.0e668ddc.css.map",
-    "main.b4a5f2a8.js.map": "/static/js/main.b4a5f2a8.js.map"
+    "main.cca0501d.js.map": "/static/js/main.cca0501d.js.map"
   },
   "entrypoints": [
     "static/css/main.0e668ddc.css",
-    "static/js/main.b4a5f2a8.js"
+    "static/js/main.cca0501d.js"
   ]
 }
