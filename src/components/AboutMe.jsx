@@ -18,7 +18,7 @@ function AboutMe () {
                             hover="<span class='globe-emoji'>🌎</span>"
                             className="interactable webdev"
                             heading="Web Developer"
-                            content="I am fluent at HTML, CSS, JavaScript, React, Bootstrap as well as Git(Hub), Electron and NodeJS. have kept up my passion for designing websites from age of 16 with minimalism at the forefront."
+                            content="I am fluent at HTML, CSS, JavaScript, ReactJS, Bootstrap as well as Git(Hub), Electron and NodeJS. Since the age of 16, I have been designing and developing websites with minimalism at the forefront."
                         />
                         <Skill 
                              hover="<span class='keyboard-emoji'>⌨️</span>"
