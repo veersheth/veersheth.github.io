@@ -13,14 +13,13 @@ import "./components/styles/mobile-styles.scss"
 function App() {
   return (
     <div className="App" data-theme="light">
-        {/* <Background /> */}
-        <ColorThemeToggle />
-        <div id="butter">
-          <LandingPage />
-          <AboutMe />
-          <Projects />
-          <Footer />
-        </div>
+      <ColorThemeToggle />
+      <div id="butter">
+        <LandingPage />
+        <AboutMe />
+        <Projects />
+        <Footer />
+      </div>
     </div>
   );
 };

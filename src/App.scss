@@ -93,3 +93,14 @@ svg {
   // height: 1.5em;
   fill: var(--svg-color);
 }
+
+#backdrop-animation {
+  position: fixed;
+  // background-color: red;
+  color: green;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

@@ -36,9 +36,14 @@
 }
 
 .welcome-div:hover {
-    transform: scale(1.2) translateY(-50%);
+    // transform: scale(1.2) translateY(-50%);
     box-shadow: 0 0 50px 3px var(--shadow);
-    animation: say-hi 750ms ease-out forwards;
+    [data-theme="dark"] & {
+        animation: 
+            say-hi 750ms ease-out forwards, 
+            continuous-glow 1000ms ease-in-out alternate-reverse infinite;
+    }
+    
 }
 
 @keyframes say-hi {
@@ -53,6 +58,24 @@
     }
     100% {
         transform: translateY(-50%) skewX(0deg);
+    }
+}
+
+@keyframes continuous-glow {
+    0% {
+        box-shadow: 0 0 10px 0px var(--shadow);
+    }
+    30% {
+        box-shadow: 0 0 60px 4px var(--shadow);
+    }
+    50% {
+        box-shadow: 0 0 50px 3px var(--shadow);
+    }
+    75% {
+        box-shadow: 0 0 20px 1px var(--shadow);
+    }
+    100% {
+        box-shadow: 0 0 10px 0px var(--shadow);
     }
 }
 
