@@ -30,12 +30,12 @@
 
 #contact >*:hover{
     transform:scale(1.1);
-    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.308);
+    box-shadow: 5px 5px 30px var(--shadow);
 }
 
 #contact >*:active{
     transform:scale(0.9);
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.516);
+    box-shadow: 5px 5px 20px var(--shadow);
 }
 
 .email {

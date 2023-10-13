@@ -11,21 +11,20 @@
     position: relative; /* Required for absolute positioning */
     top: 50%;
     transform: translateY(-50%);
-    transition: transform 200ms ease;
-
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 1.75em;
-
+    
     
     background-color: var(--bg-secn);
-    color: --var(--acc-prim);
+    color: var(--acc-prim);
     border-radius: 20px;
-
-    box-shadow: 0 0 20px 20px #00000018;
+    transition: transform 200ms ease, scale 200ms ease, box-shadow 600ms ease;
+    
 }
 
 .welcome-div h1 {
@@ -37,11 +36,9 @@
 }
 
 .welcome-div:hover {
-    transform: scale(1.01) translateY(-50%);
-}
-
-.welcome-div:active{
-    animation: say-hi 500ms ease forwards;
+    transform: scale(1.2) translateY(-50%);
+    box-shadow: 0 0 50px 3px var(--shadow);
+    animation: say-hi 750ms ease-out forwards;
 }
 
 @keyframes say-hi {
@@ -55,7 +52,7 @@
         transform: translateY(-50%) skewX(10deg);
     }
     100% {
-        transform: translateY(-50%) skewX(0deg) scale(1.01);
+        transform: translateY(-50%) skewX(0deg);
     }
 }
 
@@ -67,16 +64,16 @@
 
 @keyframes hand-waves {
     0% {
-        transform: rotate(-20deg) translate(0.05em, 0.01em);
+        transform: rotate(-10deg) translate(0.05em, 0.01em);
     }
     20% {
-        transform: rotate(-50deg) translateX(-0.2em);
+        transform: rotate(-40deg) translateX(-0.2em);
     }
     60% {
-        transform: rotate(10deg) translateX(0.2em);
+        transform: rotate(5deg) translateX(0.2em);
     }
     100% {
-        transform: rotate(-20deg) translate(0.075em, 0.05em);
+        transform: rotate(-10deg) translate(0.075em, 0.05em);
     }
 
 }

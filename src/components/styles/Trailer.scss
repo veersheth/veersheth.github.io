@@ -11,19 +11,17 @@
   z-index: 10000;
   
   pointer-events: none;
-  opacity: 1;
+  opacity: 0.95;
   transition: opacity 500ms ease, transform 200ms ease;
   
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-
   font-size: 0.5em;
-  backdrop-filter: blur(10px);
 }
 
 .App:hover > .trailer {
-    opacity: 1;
+    opacity: 0.95;
   }
 

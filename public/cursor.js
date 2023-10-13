@@ -8,7 +8,7 @@ function cursorFunc() {
 
             const moveframes = {
                 transform: `translate(${x}px, ${y}px) scale(${interacting ? 6 : 1})`,
-                opacity:0.9,
+                opacity:1,
             }
 
             if(interacting){
