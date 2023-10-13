@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.a5cfe0a4.css",
-    "main.js": "/static/js/main.54d41e7d.js",
+    "main.css": "/static/css/main.d438d0e9.css",
+    "main.js": "/static/js/main.0788c4bb.js",
     "static/media/imgFlutterChat.png": "/static/media/imgFlutterChat.b9d870e658a82f9c6147.png",
     "static/media/keeper.png": "/static/media/keeper.e5f8397b434e2e480ec2.png",
     "static/media/pyssword-manager.png": "/static/media/pyssword-manager.c5b0c6a82d5333290058.png",
     "static/media/python-app-launcher.png": "/static/media/python-app-launcher.413f2722ac293cdfc453.png",
     "static/media/the-brown-fox.png": "/static/media/the-brown-fox.611baf9c03d48d3f0192.png",
     "index.html": "/index.html",
-    "main.a5cfe0a4.css.map": "/static/css/main.a5cfe0a4.css.map",
-    "main.54d41e7d.js.map": "/static/js/main.54d41e7d.js.map"
+    "main.d438d0e9.css.map": "/static/css/main.d438d0e9.css.map",
+    "main.0788c4bb.js.map": "/static/js/main.0788c4bb.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5cfe0a4.css",
-    "static/js/main.54d41e7d.js"
+    "static/css/main.d438d0e9.css",
+    "static/js/main.0788c4bb.js"
   ]
 }
