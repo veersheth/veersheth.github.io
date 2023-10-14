@@ -23,7 +23,9 @@
     background-color: var(--bg-secn);
     color: var(--acc-prim);
     border-radius: 20px;
-    transition: transform 200ms ease, scale 200ms ease, box-shadow 600ms ease;
+    transition: 
+        transform 200ms ease, scale 200ms ease, 
+        box-shadow 600ms ease;
     
 }
 
@@ -36,18 +38,18 @@
 }
 
 .welcome-div:hover {
-    // transform: scale(1.2) translateY(-50%);
-    box-shadow: 0 0 50px 3px var(--shadow);
+    animation-iteration-count: 2;
+    [data-theme="light"] & {
+        animation: 
+            say-hi 750ms ease-out; 
+        box-shadow: 0 0 20px 5px var(--shadow);
+    };    
     [data-theme="dark"] & {
         animation: 
-            say-hi 750ms ease-out forwards, 
-            continuous-glow 1000ms ease-in-out alternate-reverse infinite;
-    }
-    [data-theme="dark"] & {
-        animation: 
-            say-hi 750ms ease-out forwards, 
-    }
-    
+            say-hi 750ms ease-out, 
+            continuous-glow 1000ms ease-in-out;
+        box-shadow: 0 0 60px 5px var(--shadow);
+    };     
 }
 
 @keyframes say-hi {
@@ -74,33 +76,55 @@
     }
     50% {
         box-shadow: 0 0 50px 3px var(--shadow);
+        box-shadow: 0 0 10px 0px var(--shadow);
     }
     75% {
         box-shadow: 0 0 20px 1px var(--shadow);
     }
+    90% {
+    }
     100% {
-        box-shadow: 0 0 10px 0px var(--shadow);
+        box-shadow: 0 0 60px 5px var(--shadow);
     }
 }
 
 .hi-hand {
-    transition: transform 200ms linear;
-    animation: hand-waves 1000ms forwards 1;
+    transition: transform 200ms ease;
+    animation: hand-waves 1.5s forwards 1;
     // animation-fill-mode: both;
 }
 
+
 @keyframes hand-waves {
     0% {
-        transform: rotate(-10deg) translate(0.05em, 0.01em);
+        transform: 
+            rotate(0deg) 
+            translate(0.05em, 0.01em)
+            // scale(0.8);
     }
     20% {
-        transform: rotate(-40deg) translateX(-0.2em);
+        transform: 
+            rotate(-40deg) 
+            translateX(-0.2em)
+        }
+    40% {
+        transform: 
+            rotate(0deg) 
+            translateX(0.2em)
+        // scale(1.1)
     }
     60% {
-        transform: rotate(5deg) translateX(0.2em);
+        transform: 
+            rotate(-40deg) 
+            translateX(-0.2em)
     }
+    80% {
+        transform: 
+            rotate(0deg) 
+            translateX(0.2em)
+}
     100% {
-        transform: rotate(-10deg) translate(0.075em, 0.05em);
+        transform: 
+            rotate(-40deg) 
     }
-
 }
