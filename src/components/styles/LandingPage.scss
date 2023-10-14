@@ -43,6 +43,10 @@
             say-hi 750ms ease-out forwards, 
             continuous-glow 1000ms ease-in-out alternate-reverse infinite;
     }
+    [data-theme="dark"] & {
+        animation: 
+            say-hi 750ms ease-out forwards, 
+    }
     
 }
 
