@@ -7,8 +7,8 @@
 .welcome-div {
     width: 45%; 
     max-width: 600px;
-    margin: 0 auto; /* Center the container horizontally */
-    position: relative; /* Required for absolute positioning */
+    margin: 0 auto; 
+    position: relative;
     top: 50%;
     transform: translateY(-50%);
     
@@ -26,7 +26,6 @@
     transition: 
         transform 200ms ease, scale 200ms ease, 
         box-shadow 600ms ease;
-    
 }
 
 .welcome-div h1 {
