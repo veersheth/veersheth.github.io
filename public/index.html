@@ -27,4 +27,15 @@
   <script src="butter.js"></script>
   <script src="cursor.js" ></script>
   <script src="links.js"></script>
+  <script>
+    setTimeout(function() {
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("body").setAttribute("data-theme", "dark");
+        setDarkMode(true);
+      } else {
+        document.querySelector("body").setAttribute("data-theme", "light");
+        setDarkMode(false);
+      }
+    }, 300);
+  </script>
 </html> 
