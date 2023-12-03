@@ -12,10 +12,10 @@ function cursorFunc() {
             opacity:1,
         }
 
-        if(interacting){
+        if (interacting){
             let hoverValue = interactable.dataset.hover;
             trailer.innerHTML = hoverValue
-        }else{
+        } else {
             trailer.innerHTML = ""
         }
 

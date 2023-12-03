@@ -1,11 +1,11 @@
 #projects {
-    align-items: center;
+    height: 100vh;
     padding-top: 6vh;
-    height: 100vh;  
+    align-items: center;
 }
 
 #projects h1 {
-    height: 5vh
+    height: 5vh;
 }
 
 .project-list-container {
@@ -17,18 +17,70 @@
 }
 
 .project-list {
-    /* height: 85vh; */
     list-style-type: none;
     display: grid;
     grid-template-rows: min-content;
     grid-auto-flow: column;
-
     overflow-x: auto;
-    /* overflow-y: hidden; */
-    /* overscroll-behavior-inline: contain; */
 }
 
 .snaps-inline {
     scroll-snap-align: start;
     scroll-snap-type: x mandatory;
+}
+
+.project {
+    width: 30vh;
+    margin: 10px 1rem;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: var(--bg-secn);
+    text-align: center;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    transition: box-shadow 200ms ease, transform 200ms ease;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.01);
+        box-shadow: 0px 0px 30px var(--shadow);
+    }
+
+    &:active {
+        transform: scale(0.95);
+        box-shadow: 0px 0px 30px var(--shadow);
+    }
+
+    img {
+        height: 70%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .content {
+        align-items: center;
+        padding: 10px;
+
+        p {
+            font-size: 0.9em;
+        }
+    }
+}
+
+.link-cursor-inner {
+    transition: transform 1000ms ease;
+    transform: scale(0.5);
+    animation: linkCursorGrowShrink 1000ms ease infinite;
+}
+
+@keyframes linkCursorGrowShrink {
+    0%, 100% {
+        transform: scale(0.5);
+    }
+    33% {
+        transform: scale(0.6);
+    }
+    66% {
+        transform: scale(0.3);
+    }
 }

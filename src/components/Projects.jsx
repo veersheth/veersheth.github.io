@@ -83,7 +83,7 @@ const Projects = () => {
             <div className="project-list-container">
                 <ul className="project-list snaps-inline">
                     {ProjectList.map((item) => (
-                        <li>
+                        <li data-scroll-speed="2">
                             <Project 
                             header={item.header}
                             link={item.link}
