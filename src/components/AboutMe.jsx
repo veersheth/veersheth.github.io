@@ -1,25 +1,26 @@
 import React from "react";
 import "./styles/AboutMe.scss"
+import "./styles/SkillAnimations.scss"
 
 import Skill from "./Skill";
 
 function AboutMe () {
     return(
         <section id="about-me">
-                <h1>About me</h1>
-                    <ul className="skill-list">
+            <h1>About me</h1>
+                <ul className="skill-list">
                         <Skill 
                             hover="<span class='nerd-emoji'>🤓</span>"
                             className="interactable student"
                             heading="Student"
                             content="I am currently a first year student studying Computer Science at the University of New South Wales. In this constantly changing field, I am confident that this title is a permanent one for me. "
-                        />
+                            />
                         <Skill 
                             hover="<span class='globe-emoji'>🌎</span>"
                             className="interactable webdev"
                             heading="Web Developer"
                             content="I am fluent at HTML, CSS, JavaScript, ReactJS, Bootstrap as well as Git(Hub), Electron and NodeJS. Since the age of 16, I have been designing and developing websites with minimalism at the forefront."
-                        />
+                            />
                         <Skill 
                              hover="<span class='keyboard-emoji'>⌨️</span>"
                             className="interactable programmer"
