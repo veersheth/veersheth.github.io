@@ -1,32 +1,42 @@
 #landing-page {
-    position: relative; /* Add this line */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
     min-height: 90vh;
     max-height: 100vh;
+    margin-top: 1%;
+    padding: 4rem 2rem; /* Add some padding to move content away from the edge */
     background-color: #ffffff00;
+    text-align: left; /* Center text */
 }
 
-#landing-page h1 {
-    position: absolute;
-    font-size: 5rem;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -55%);
-}
 .welcome-div {
-    width: 45%; 
-    max-width: 600px;
-    padding: 1.25em 1em;
-    background-color: var(--bg-secn);
+    width: 70vw;
+    max-width: 100vw;
     color: var(--acc-prim);
     border-radius: 1.5rem;
-    transform: translate(0, 110%);
     transition: transform 200ms ease, scale 200ms ease, box-shadow 600ms ease;
-    text-align: center;
+    text-align: left;
+    margin: auto 25rem auto auto; /* Adjust the left margin */
 }
+
+.welcome-div h1 {
+    line-height: 1.2;
+    color: var(--acc-prim);
+}
+
+.strikethrough {
+    text-decoration: line-through;
+    margin: auto 1.5rem;
+    color: var(--acc-prim);
+    opacity: 0.2;
+}
+
+.highlight {
+    color: var(--highlight-color);
+}
+
 
 .welcome-div p {
     margin: 5px auto 0;
@@ -46,6 +56,16 @@
 //         box-shadow: 0 0 60px 5px var(--shadow);
 //     };     
 // }
+
+@media (max-width: 700px) {
+    #landing-page {
+        margin-top: 5%;;
+        padding: 4rem 2rem;
+    }
+    .welcome-div h1 {
+        font-size: 2.5rem;
+    }
+}
 
 @keyframes say-hi {
     0%{

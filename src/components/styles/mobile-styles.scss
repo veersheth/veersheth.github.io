@@ -1,10 +1,15 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .trailer {
         visibility: hidden;
     }
 
+    h1 {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+
     .body {
-        font-size: 1.2em;
+        font-size: 0.9em;
     }
 
     .welcome-div {

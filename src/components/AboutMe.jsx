@@ -7,7 +7,7 @@ import Skill from "./Skill";
 function AboutMe () {
     return(
         <section id="about-me">
-            <h1>Who am I?</h1>
+            <h1>About me</h1>
                 <ul className="skill-list">
                         <Skill 
                             hover="<span class='nerd-emoji'>🤓</span>"

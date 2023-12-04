@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import LocomotiveScroll from 'locomotive-scroll';
-import { gsap } from 'gsap';
 import "./App.scss";
 import "./components/styles/Trailer.scss"
 
@@ -23,14 +22,6 @@ function App() {
         el: containerRef.current,
         smooth: true,
         direction: 'vertical',
-      });
-
-      scroll.on('scroll', (instance) => {
-        gsap.to('.your-element-class', {
-          y: instance.scroll.y * -0.5,
-          ease: 'none',
-          delay: 0.5,
-        });
       });
 
       return () => {

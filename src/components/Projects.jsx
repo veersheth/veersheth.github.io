@@ -81,9 +81,9 @@ const Projects = () => {
         <section id='projects'>
             <h1>Notable Projects</h1>
             <div className="project-list-container">
-                <ul className="project-list snaps-inline">
+                <ul className="project-list snaps-inline" data-scroll data-scroll-direction="horizontal">
                     {ProjectList.map((item) => (
-                        <li data-scroll-speed="2">
+                        <li>
                             <Project 
                             header={item.header}
                             link={item.link}
