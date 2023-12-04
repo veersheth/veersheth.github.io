@@ -52,16 +52,16 @@
     justify-content: center;
     background-color: var(--bg-secn);
     margin: 1em 0 0;
-    background-size: 100% 200%;
-    transition: background-position 0.5s, transform 0.5s ease;
-    background-image: linear-gradient(to bottom, var(--acc-prim), var(--acc-prim) 50%, var(--bg-secn) 50%, var(--bg-secn));
-    background-position: 0 -100.99%;
+    // background-size: 100% 100%;
+    // transition: background-position 0.5s, transform 0.5s ease;
+    // background-image: linear-gradient(to bottom, var(--acc-prim), var(--acc-prim) 50%, var(--bg-secn) 50%, var(--bg-secn));
+    // background-position: 0 -100%;
 
-    &:hover {
-        background-position: 0 0;
-        color: var(--bg-prim);
-        transform: scale(1.1);
-    }
+    // &:hover {
+    //     background-position: 0 0;
+    //     color: var(--bg-prim);
+    //     transform: scale(1.1);
+    // }
 }
 
 .fa-location-dot {
