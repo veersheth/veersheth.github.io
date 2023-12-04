@@ -1,55 +1,51 @@
-
 #landing-page {
-    background-color: #ffffff00;
-    height: 100vh;
-}
-
-.welcome-div {
-    width: 45%; 
-    max-width: 600px;
-    margin: 0 auto; 
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    
+    position: relative; /* Add this line */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 1.75em;
-    
-    
+    min-height: 90vh;
+    max-height: 100vh;
+    background-color: #ffffff00;
+}
+
+#landing-page h1 {
+    position: absolute;
+    font-size: 5rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -55%);
+}
+.welcome-div {
+    width: 45%; 
+    max-width: 600px;
+    padding: 1.25em 1em;
     background-color: var(--bg-secn);
     color: var(--acc-prim);
     border-radius: 1.5rem;
-    transition: 
-        transform 200ms ease, scale 200ms ease, 
-        box-shadow 600ms ease;
-}
-
-.welcome-div h1 {
-    margin: 0px auto 5px;
+    transform: translate(0, 110%);
+    transition: transform 200ms ease, scale 200ms ease, box-shadow 600ms ease;
+    text-align: center;
 }
 
 .welcome-div p {
-    margin: 5px auto 0px
+    margin: 5px auto 0;
 }
 
-.welcome-div:hover {
-    animation-iteration-count: 2;
-    [data-theme="light"] & {
-        animation: 
-            say-hi 750ms ease-out; 
-        box-shadow: 0 0 20px 5px var(--shadow);
-    };    
-    [data-theme="dark"] & {
-        animation: 
-            say-hi 750ms ease-out, 
-            continuous-glow 1000ms ease-in-out;
-        box-shadow: 0 0 60px 5px var(--shadow);
-    };     
-}
+// .welcome-div:hover {
+//     animation-iteration-count: 2;
+//     [data-theme="light"] & {
+//         animation: 
+//             say-hi 750ms ease-out; 
+//         box-shadow: 0 0 20px 5px var(--shadow);
+//     };    
+//     [data-theme="dark"] & {
+//         animation: 
+//             say-hi 750ms ease-out, 
+//             continuous-glow 1000ms ease-in-out;
+//         box-shadow: 0 0 60px 5px var(--shadow);
+//     };     
+// }
 
 @keyframes say-hi {
     0%{

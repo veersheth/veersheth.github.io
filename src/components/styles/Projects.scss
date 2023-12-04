@@ -1,19 +1,24 @@
 #projects {
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 6vh;
     align-items: center;
 }
 
 #projects h1 {
-    height: 5vh;
+    // min-height: 5vh;
+    // max-height: 400px;
+    text-align: right;
+    margin-right: 3rem;
 }
 
 .project-list-container {
     display: flex;
-    height: 85vh;
+    // height: 85vh;
+    margin: 2rem auto;
     justify-content: center;
     align-items: center;
-    transform: scale(0.95);
+    max-width: 2000px;
+    // transform: scale(0.95);
 }
 
 .project-list {
@@ -31,7 +36,7 @@
 
 .project {
     width: 30vh;
-    margin: 10px 1rem;
+    // margin: 10px 1rem;
     padding: 20px;
     border-radius: 30px;
     background-color: var(--bg-secn);
