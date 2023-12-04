@@ -15,30 +15,25 @@ function App() {
   const containerRef = useRef(null);
 
   useEffect(() => {
-    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    const scroll = new LocomotiveScroll({
+      el: containerRef.current,
+      smooth: true,
+      lerp: 0.05,
+      smartphone: true, // Enable Locomotive Scroll on smartphones
+      direction: 'vertical',
+    });
     
-    
-    if (!isTouchDevice) {
-      const scroll = new LocomotiveScroll({
-        el: containerRef.current,
-        smooth: true,
-        lerp: 0.05,
-        smartphone: false,
-        direction: 'vertical',
-      });
-      
-      scroll.update();
-      scroll.on('scroll', (instance) => {
-          const progress = instance.scroll.y / instance.limit;
-          const scale = 1 - progress * 0.75; // Adjust the factor as needed
-          containerRef.current.style.transform = `scale(${scale})`;
-      });
+    scroll.update();
+    scroll.on('scroll', (instance) => {
+        const progress = instance.scroll.y / instance.limit;
+        const scale = 1 - progress * 0.75; // Adjust the factor as needed
+        containerRef.current.style.transform = `scale(${scale})`;
+    });
 
-      return () => {
-        if (scroll) scroll.destroy();
-        window.removeEventListener('resize', scroll.update);
-      };
-    }
+    return () => {
+      if (scroll) scroll.destroy();
+      window.removeEventListener('resize', scroll.update);
+    };
   }, []);
 
   return (
