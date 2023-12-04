@@ -3,6 +3,10 @@
         visibility: hidden;
     }
 
+    body {
+        overflow: auto;
+    }
+
     h1 {
         font-size: 2.5rem;
         text-align: left;
