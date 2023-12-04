@@ -78,10 +78,10 @@ const ProjectList = [
 
 const Projects = () => {
     return (
-        <section id='projects'>
-            <h1>Notable Projects</h1>
+        <section id='projects' data-scroll data-scroll-speed="1">
+            <h1 data-scroll data-scroll-speed="2">Notable Projects</h1>
             <div className="project-list-container">
-                <ul className="project-list snaps-inline" data-scroll data-scroll-direction="horizontal">
+                <ul className="project-list snaps-inline" data-scroll data-scroll-speed="1" data-scroll-direction="horizontal">
                     {ProjectList.map((item) => (
                         <li>
                             <Project 
@@ -95,7 +95,6 @@ const Projects = () => {
                     ))}
                 </ul>
             </div>
-          
         </section>
     );
 };

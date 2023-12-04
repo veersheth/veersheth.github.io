@@ -16,12 +16,22 @@ function App() {
 
   useEffect(() => {
     const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-
+    
+    
     if (!isTouchDevice) {
       const scroll = new LocomotiveScroll({
         el: containerRef.current,
         smooth: true,
+        lerp: 0.05,
+        smartphone: false,
         direction: 'vertical',
+      });
+      
+      scroll.update();
+      scroll.on('scroll', (instance) => {
+          const progress = instance.scroll.y / instance.limit;
+          const scale = 1 - progress * 0.75; // Adjust the factor as needed
+          containerRef.current.style.transform = `scale(${scale})`;
       });
 
       return () => {
