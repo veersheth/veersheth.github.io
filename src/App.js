@@ -16,26 +16,28 @@ function App() {
   const containerRef = useRef(null);
 
   useEffect(() => {
-    const scroll = new LocomotiveScroll({
-      el: containerRef.current,
-      smooth: true,
-      direction: 'vertical',
-    });
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 
-    scroll.on('scroll', (instance) => {
-      // Use GSAP to animate your elements based on the scroll position
-      gsap.to('.your-element-class', {
-        y: instance.scroll.y * -0.5,
-        ease: 'none',
-        delay: 0.5, // Add delay for staggering effect
+    if (!isTouchDevice) {
+      const scroll = new LocomotiveScroll({
+        el: containerRef.current,
+        smooth: true,
+        direction: 'vertical',
       });
-    });
 
-    // Cleanup event listener
-    return () => {
-      if (scroll) scroll.destroy();
-      window.removeEventListener('resize', scroll.update);
-    };
+      scroll.on('scroll', (instance) => {
+        gsap.to('.your-element-class', {
+          y: instance.scroll.y * -0.5,
+          ease: 'none',
+          delay: 0.5,
+        });
+      });
+
+      return () => {
+        if (scroll) scroll.destroy();
+        window.removeEventListener('resize', scroll.update);
+      };
+    }
   }, []);
 
   return (
