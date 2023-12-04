@@ -19,7 +19,9 @@ function App() {
       el: containerRef.current,
       smooth: true,
       lerp: 0.05,
-      smartphone: true, // Enable Locomotive Scroll on smartphones
+      smartphone: { smooth: true }, // Enable smooth scrolling on smartphones
+      tablet: { smooth: true }, // Enable smooth scrolling on tablets
+      touch: 'force', // Force Locomotive Scroll on touch devices
       direction: 'vertical',
     });
     
