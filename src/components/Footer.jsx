@@ -42,7 +42,7 @@ const Contact = () => {
                 </a>
                 
             </div>
-            <div className="copyright">Copyright © {year} Veer Sheth</div>
+            <div className="copyright">Veer Sheth // {year}</div>
         </section>
     );
 };
