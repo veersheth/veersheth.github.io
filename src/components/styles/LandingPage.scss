@@ -42,20 +42,31 @@
     margin: 5px auto 0;
 }
 
-// .welcome-div:hover {
-//     animation-iteration-count: 2;
-//     [data-theme="light"] & {
-//         animation: 
-//             say-hi 750ms ease-out; 
-//         box-shadow: 0 0 20px 5px var(--shadow);
-//     };    
-//     [data-theme="dark"] & {
-//         animation: 
-//             say-hi 750ms ease-out, 
-//             continuous-glow 1000ms ease-in-out;
-//         box-shadow: 0 0 60px 5px var(--shadow);
-//     };     
-// }
+.chip {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 1em;
+    text-align: center;
+    opacity: 0.9;
+    justify-content: center;
+    background-color: var(--bg-secn);
+    margin: 1em 0 0;
+    background-size: 100% 200%;
+    transition: background-position 0.5s, transform 0.5s ease;
+    background-image: linear-gradient(to bottom, var(--acc-prim), var(--acc-prim) 50%, var(--bg-secn) 50%, var(--bg-secn));
+    background-position: 0 -100.99%;
+
+    &:hover {
+        background-position: 0 0;
+        color: var(--bg-prim);
+        transform: scale(1.1);
+    }
+}
+
+.fa-location-dot {
+    margin-right: 5px;
+}
 
 @media (max-width: 700px) {
     #landing-page {
