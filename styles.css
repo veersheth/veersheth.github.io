@@ -35,11 +35,12 @@
 }
 
 :root {
-  --font-size: 14px;
+  --font-size: 15px;
   --l-font-size: 15px;
   --font: 'IoskeleyMono', monospace;
-  --font-color: hsl(41, 60%, 88%);
-  --accent: rgba(136, 160, 211, 1);
+  --font-color: rgb(237, 237, 237);
+  --accent: rgb(158, 157, 190);
+  --background: rgb(20, 20, 20);
   --border-color: rgba(255, 255, 255, 0.2);
   --border-color-subtle: rgba(255, 255, 255, 0.15);
 }
@@ -85,7 +86,7 @@
 }
 
 body {
-  background: #000000;
+  background: var(--background);
   color: var(--font-color);
   font-family: var(--font);
   font-size: var(--font-size);
@@ -259,8 +260,8 @@ body {
   display: flex;
   flex-direction: column;
 
-  border-top: 2px solid var(--border-color);
-  border-left: 2px solid var(--border-color);
+  border-top: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
 
@@ -270,7 +271,10 @@ body {
 }
 
 .project-card:hover {
-    border-bottom-color:  var(--accent);
+  border-top-width: 1px;
+  border-left-width: 1px;
+  border-right-width: 4px;
+  border-bottom-width: 4px;
 }
 
 .project-card-title {
@@ -287,7 +291,7 @@ body {
 }
 
 .project-card-skills {
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 400;
   opacity: 0.45;
   letter-spacing: 0.04em;
@@ -323,7 +327,7 @@ body {
   border-bottom: 2px solid var(--accent);
 
   background-color: var(--accent);
-  color: black;
+  color: white;
 }
 
 .pill.inactive {
