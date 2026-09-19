@@ -1,4 +1,5 @@
 
+
 const projectsList = document.querySelector('.projects-list');
 document.querySelector('.projects-prev').addEventListener('click', () => {
   projectsList.scrollBy({ left: -projectsList.querySelector('.project-card').offsetWidth, behavior: 'smooth' });
@@ -7,7 +8,6 @@ document.querySelector('.projects-next').addEventListener('click', () => {
   projectsList.scrollBy({ left: projectsList.querySelector('.project-card').offsetWidth, behavior: 'smooth' });
 });
 
-
 let isFalling = false;
 
 function everythingFalls() {
@@ -15,7 +15,7 @@ function everythingFalls() {
   isFalling = true;
   document.body.classList.add('vader-active');
 
-  const els = [...document.querySelectorAll('.name-row, .about, .links, .project-card, .pill, .heading, .projects-btn, .footer')];
+  const els = [...document.querySelectorAll('.name-row, .about, .links, .project-card, .pill, .heading, .footer')];
   const savedStyles = els.map(el => el.getAttribute('style') || '');
   const homeRects = els.map(el => el.getBoundingClientRect());
 
