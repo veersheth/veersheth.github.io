@@ -1,4 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500;800&display=swap');
+@font-face {
+  font-family: 'IoskeleyMono';
+  src: url('fonts/IoskeleyMono-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'IoskeleyMono';
+  src: url('fonts/IoskeleyMono-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'IoskeleyMono';
+  src: url('fonts/IoskeleyMono-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'IoskeleyMono';
+  src: url('fonts/IoskeleyMono-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
 
 * {
   box-sizing: border-box;
@@ -10,7 +37,7 @@
 :root {
   --font-size: 14px;
   --l-font-size: 15px;
-  --font: 'Geist Mono', monospace;
+  --font: 'IoskeleyMono', monospace;
   --font-color: hsl(41, 60%, 88%);
   --accent: rgba(136, 160, 211, 1);
   --border-color: rgba(255, 255, 255, 0.2);
@@ -334,6 +361,16 @@ body {
 .links a:hover,
 .links button:hover {
   color: var(--accent);
+}
+
+.email-text {
+  margin-left: auto;
+  white-space: nowrap;
+  font-size: var(--font-size);
+  font-family: var(--font);
+  font-weight: 400;
+  user-select: none;
+  cursor: pointer;
 }
 
 

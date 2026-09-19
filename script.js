@@ -213,6 +213,18 @@ document.addEventListener('keydown', (e) => {
 
 document.querySelector('.footer').addEventListener('click', everythingFalls);
 
+const emailEl = document.querySelector('.email-text');
+const EMAIL = 'veerksheth@gmail.com';
+let emailResetTimer;
+emailEl.style.cursor = 'pointer';
+emailEl.addEventListener('click', () => {
+  navigator.clipboard.writeText(EMAIL).then(() => {
+    clearTimeout(emailResetTimer);
+    emailEl.textContent = 'Copied to clipboard';
+    emailResetTimer = setTimeout(() => { emailEl.textContent = 'veerksheth [at] gmail [dot] com'; }, 2000);
+  });
+});
+
 
 const allPills = document.querySelectorAll('.pill');
 
