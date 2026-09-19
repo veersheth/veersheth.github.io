@@ -345,6 +345,7 @@ body {
 .links a,
 .links button {
   font-family: var(--font);
+  color: var(--color);
   font-size: var(--font-size);
   font-weight: 400;
   color: var(--font-color);
@@ -355,6 +356,11 @@ body {
   padding: 0;
   border-radius: 0;
   transition: color 0.2s ease;
+}
+
+.links a,
+.links button {
+  transition: color 0.4s ease;
 }
 
 .links a:hover,
@@ -374,11 +380,28 @@ body {
 
 
 body {
+  transition: color 0.4s ease;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 99999;
+  box-shadow: inset 0 0 80px 20px rgba(255, 0, 0, 0);
   transition: box-shadow 0.4s ease;
 }
 
-body.vader-active {
+body.vader-active::before {
   box-shadow: inset 0 0 80px 20px rgba(255, 0, 0, 0.45);
+}
+
+body.vader-active,
+body.vader-active .links a,
+body.vader-active .links button,
+body.vader-active .email-text {
+  color: rgba(220, 60, 60, 1);
 }
 
 .footer {
