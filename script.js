@@ -228,12 +228,18 @@ emailEl.addEventListener('click', () => {
 
 const allPills = document.querySelectorAll('.pill');
 
-document.querySelectorAll('.project-card').forEach(card => {
+function randomRotation() {
+  const mag = 1 + Math.random() * 2;
+  return Math.random() < 0.5 ? mag : -mag;
+}
+
+document.querySelectorAll('.project-card').forEach((card, i) => {
   card.addEventListener('click', () => {
     if (card.dataset.url) window.open(card.dataset.url, '_blank');
   });
 
   card.addEventListener('mouseenter', () => {
+    card.style.transform = `rotate(${randomRotation()}deg)`;
     const skills = card.dataset.skills.split(',').map(s => s.trim());
     allPills.forEach(pill => {
       if (skills.includes(pill.textContent.trim())) {
@@ -247,6 +253,7 @@ document.querySelectorAll('.project-card').forEach(card => {
   });
 
   card.addEventListener('mouseleave', () => {
+    card.style.transform = '';
     allPills.forEach(pill => pill.classList.remove('active', 'inactive'));
   });
 });

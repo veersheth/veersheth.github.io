@@ -39,7 +39,7 @@
   --l-font-size: 15px;
   --font: 'IoskeleyMono', monospace;
   --font-color: rgb(237, 237, 237);
-  --accent: rgb(158, 157, 190);
+  --accent: rgb(110, 153, 216);
   --background: rgb(20, 20, 20);
   --border-color: rgba(255, 255, 255, 0.2);
   --border-color-subtle: rgba(255, 255, 255, 0.15);
@@ -267,7 +267,7 @@ body {
 
   gap: 16px;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.2s ease, transform 0.2s ease;
 }
 
 .project-card:hover {
@@ -277,9 +277,9 @@ body {
   border-bottom-width: 4px;
 }
 
+
 .project-card-title {
   font-size: var(--l-font-size);
-  text-decoration: underline;
   font-weight: 500;
 }
 
