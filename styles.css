@@ -108,6 +108,10 @@ body {
   gap: 3rem;
 }
 
+.highlight { 
+  color: var(--accent);
+}
+
 .skills-panel {
   display: flex;
   flex-direction: column;
@@ -402,6 +406,77 @@ body.vader-active .links a,
 body.vader-active .links button,
 body.vader-active .email-text {
   color: rgba(220, 60, 60, 1);
+}
+
+.experience {
+  width: 100%;
+  max-width: 720px;
+  text-align: left;
+}
+
+.experience .heading {
+  text-align: left;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.experience-card {
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid var(--border-color);
+  transition: all 0.2s ease;
+}
+
+
+.experience-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.experience-card-title {
+  font-weight: 500;
+  font-size: var(--l-font-size);
+}
+
+.experience-card-date {
+  font-size: 13px;
+  opacity: 0.45;
+  white-space: nowrap;
+}
+
+.experience-card-company {
+  font-size: 13px;
+  letter-spacing: 0.02em;
+}
+
+.experience-card-description {
+  font-size: var(--font-size);
+  font-weight: 400;
+  line-height: 1.8;
+  opacity: 0.85;
+}
+
+@media (min-width: 660px) {
+  .experience {
+    max-width: 960px;
+  }
+
+  .experience-list {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .experience-card {
+    flex: 1;
+  }
 }
 
 .footer {
