@@ -258,35 +258,49 @@ document.querySelectorAll('.project-card').forEach((card, i) => {
   });
 });
 
-// Scramble on load
+// Scramble
 const SCRAMBLE_CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&*-+<>';
 
-function scramble(el, delay = 0) {
-  const original = el.textContent;
-  const len = original.length;
-  const lead = 2;
-  const stagger = 1;
-  let frame = 0;
+function scrambleTo(el, target, delay = 0) {
+  if (el._cancelScramble) el._cancelScramble();
+  const lead = 2, stagger = 1;
+  let frame = 0, interval;
 
-  setTimeout(() => {
-    const id = setInterval(() => {
-      el.textContent = [...original].map((ch, i) => {
+  const timeout = setTimeout(() => {
+    interval = setInterval(() => {
+      el.textContent = [...target].map((ch, i) => {
         if (ch === ' ') return ' ';
         if (frame >= lead + i * stagger) return ch;
         return SCRAMBLE_CHARS[Math.floor(Math.random() * SCRAMBLE_CHARS.length)];
       }).join('');
       frame++;
-      if (frame >= lead + len * stagger) {
-        clearInterval(id);
-        el.textContent = original;
+      if (frame >= lead + target.length * stagger) {
+        clearInterval(interval);
+        el.textContent = target;
+        el._cancelScramble = null;
       }
     }, 22);
   }, delay);
+
+  el._cancelScramble = () => { clearTimeout(timeout); clearInterval(interval); };
 }
 
+// Scramble on load
 [
   document.querySelector('.name'),
   ...document.querySelectorAll('.experience-card-title'),
   ...document.querySelectorAll('.project-card-title'),
   document.querySelector('.email-text'),
-].forEach((el, i) => { if (el) scramble(el, i * 100); });
+].forEach((el, i) => { if (el) scrambleTo(el, el.textContent, i * 100); });
+
+// Scramble to uppercase on hover
+document.querySelectorAll('.links a, .project-card-title').forEach(el => {
+  const original = el.textContent;
+  const upper = original.toUpperCase();
+  el.addEventListener('mouseenter', () => scrambleTo(el, upper));
+  el.addEventListener('mouseleave', () => scrambleTo(el, original));
+});
+
+const emailOriginal = emailEl.textContent;
+emailEl.addEventListener('mouseenter', () => scrambleTo(emailEl, 'COPY COPY COPY COPY COPY COPY  '));
+emailEl.addEventListener('mouseleave', () => scrambleTo(emailEl, emailOriginal));
