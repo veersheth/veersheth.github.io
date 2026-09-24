@@ -257,3 +257,36 @@ document.querySelectorAll('.project-card').forEach((card, i) => {
     allPills.forEach(pill => pill.classList.remove('active', 'inactive'));
   });
 });
+
+// Scramble on load
+const SCRAMBLE_CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&*-+<>';
+
+function scramble(el, delay = 0) {
+  const original = el.textContent;
+  const len = original.length;
+  const lead = 2;
+  const stagger = 1;
+  let frame = 0;
+
+  setTimeout(() => {
+    const id = setInterval(() => {
+      el.textContent = [...original].map((ch, i) => {
+        if (ch === ' ') return ' ';
+        if (frame >= lead + i * stagger) return ch;
+        return SCRAMBLE_CHARS[Math.floor(Math.random() * SCRAMBLE_CHARS.length)];
+      }).join('');
+      frame++;
+      if (frame >= lead + len * stagger) {
+        clearInterval(id);
+        el.textContent = original;
+      }
+    }, 22);
+  }, delay);
+}
+
+[
+  document.querySelector('.name'),
+  ...document.querySelectorAll('.experience-card-title'),
+  ...document.querySelectorAll('.project-card-title'),
+  document.querySelector('.email-text'),
+].forEach((el, i) => { if (el) scramble(el, i * 100); });

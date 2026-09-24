@@ -401,6 +401,27 @@ body.vader-active::before {
   box-shadow: inset 0 0 80px 20px rgba(255, 0, 0, 0.45);
 }
 
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 99998;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0px,
+    transparent 3px,
+    rgba(0, 0, 0, 0.35) 3px,
+    rgba(0, 0, 0, 0.35) 4px
+  );
+  animation: scanlines 8s linear infinite;
+}
+
+@keyframes scanlines {
+  from { transform: translateY(0); }
+  to   { transform: translateY(4px); }
+}
+
 body.vader-active,
 body.vader-active .links a,
 body.vader-active .links button,
