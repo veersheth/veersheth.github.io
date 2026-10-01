@@ -220,8 +220,8 @@ emailEl.style.cursor = 'pointer';
 emailEl.addEventListener('click', () => {
   navigator.clipboard.writeText(EMAIL).then(() => {
     clearTimeout(emailResetTimer);
-    emailEl.textContent = 'Copied to clipboard';
-    emailResetTimer = setTimeout(() => { emailEl.textContent = 'veerksheth [at] gmail [dot] com'; }, 2000);
+    // emailEl.textContent = 'COPIED COPIED COPIED COPIED    ';
+    // emailResetTimer = setTimeout(() => { emailEl.textContent = 'veerksheth [at] gmail [dot] com'; }, 2000);
   });
 });
 
@@ -302,5 +302,6 @@ document.querySelectorAll('.links a, .project-card-title').forEach(el => {
 });
 
 const emailOriginal = emailEl.textContent;
-emailEl.addEventListener('mouseenter', () => scrambleTo(emailEl, 'COPY COPY COPY COPY COPY COPY  '));
+emailEl.addEventListener('mouseenter', () => scrambleTo(emailEl, 'COPY COPY COPY COPY COPY COPY'));
 emailEl.addEventListener('mouseleave', () => scrambleTo(emailEl, emailOriginal));
+emailEl.addEventListener('click', () => scrambleTo(emailEl,      '✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓'));
