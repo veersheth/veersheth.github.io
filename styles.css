@@ -38,8 +38,14 @@
   --font-size: 15px;
   --l-font-size: 15px;
   --font: 'IoskeleyMono', monospace;
-  --font-color: rgb(237, 237, 237);
   --accent: rgb(110, 153, 216);
+
+  /* --font-color: rgb(0, 0, 0); */
+  /* --background: rgb(237, 237, 237); */
+  /* --border-color: rgba(0, 0, 0, 0.4); */
+  /* --border-color-subtle: rgba(0, 0, 0, 0.1); */
+
+  --font-color: rgb(237, 237, 237);
   --background: rgb(20, 20, 20);
   --border-color: rgba(255, 255, 255, 0.2);
   --border-color-subtle: rgba(255, 255, 255, 0.15);
@@ -277,8 +283,8 @@ body {
 .project-card:hover {
   border-top-width: 1px;
   border-left-width: 1px;
-  border-right-width: 4px;
-  border-bottom-width: 4px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
 }
 
 
@@ -316,9 +322,9 @@ body {
   padding: 8px 16px;
 
   border-top: 1px solid var(--border-color);
-  border-left: 2px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
-  border-bottom: 2px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 
   white-space: nowrap;
   transition: all 500ms ease;
@@ -326,9 +332,9 @@ body {
 
 .pill.active {
   border-top: 1px solid var(--accent);
-  border-left: 2px solid var(--accent);
+  border-left: 1px solid var(--accent);
   border-right: 1px solid var(--accent);
-  border-bottom: 2px solid var(--accent);
+  border-bottom: 1px solid var(--accent);
 
   background-color: var(--accent);
   color: white;
@@ -399,27 +405,6 @@ body::before {
 
 body.vader-active::before {
   box-shadow: inset 0 0 80px 20px rgba(255, 0, 0, 0.45);
-}
-
-body::after {
-  content: '';
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 99998;
-  background: repeating-linear-gradient(
-    to bottom,
-    transparent 0px,
-    transparent 3px,
-    rgba(0, 0, 0, 0.35) 3px,
-    rgba(0, 0, 0, 0.35) 4px
-  );
-  animation: scanlines 8s linear infinite;
-}
-
-@keyframes scanlines {
-  from { transform: translateY(0); }
-  to   { transform: translateY(4px); }
 }
 
 body.vader-active,
@@ -577,4 +562,5 @@ body.vader-active .email-text {
     justify-content: flex-start;
   }
 }
+
 
