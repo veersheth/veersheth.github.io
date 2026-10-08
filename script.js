@@ -332,4 +332,4 @@ function idleScramble() {
   setTimeout(idleScramble, 500 + Math.random() * 1800);
 }
 
-setTimeout(idleScramble, 2500);
+setTimeout(idleScramble, 500);

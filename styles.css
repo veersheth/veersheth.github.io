@@ -38,7 +38,7 @@
   --font-size: 15px;
   --l-font-size: 15px;
   --font: 'IoskeleyMono', monospace;
-  --accent: rgb(110, 153, 216);
+  --accent: rgb(229, 229, 97);
 
   /* --font-color: rgb(0, 0, 0); */
   /* --background: rgb(237, 237, 237); */
@@ -285,6 +285,8 @@ body {
   border-left-width: 1px;
   border-right-width: 1px;
   border-bottom-width: 1px;
+  color: var(--accent);
+  border-color: var(--accent);
 }
 
 
@@ -337,7 +339,7 @@ body {
   border-bottom: 1px solid var(--accent);
 
   background-color: var(--accent);
-  color: white;
+  color: black;
 }
 
 .pill.inactive {
