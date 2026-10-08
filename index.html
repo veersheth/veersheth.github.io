@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veer Sheth</title>
+    <meta name="description" content="Veer Sheth: UNSW Computer Science graduate, COMP1531 tutor, based in Sydney.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Veer Sheth">
+    <meta property="og:description" content="Computer Science graduate from UNSW. Projects, experience and tools.">
+    <link rel="preload" href="fonts/IoskeleyMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -13,13 +18,13 @@
         <div class="name">Veer Sheth</div>
       </div>
       <div class="hello-content">
-        <div class="about">Computer Science graduate from the University of New South Wales. Tutor for <span class='highlight'>COMP1531 Software Engineering Fundamentals</span>. Based in Sydney.</div>
+        <div class="about">Computer Science graduate from the University of New South Wales. Tutor for <span class="highlight">COMP1531 Software Engineering Fundamentals</span>. Based in Sydney.</div>
         <div class="links">
           <a class="contact link" href="resume.pdf" download="Veer_Sheth_Resume.pdf">Resume</a>
-          <a class="contact link" href="https://veersheth.medium.com/" target="_blank">Blog</a>
-          <a class="contact link" href="https://github.com/veersheth" target="_blank">GitHub</a>
-          <a class="contact link" href="https://linkedin.com/in/veersheth" target="_blank">LinkedIn</a>
-          <span class="email-text">veerksheth [at] gmail [dot] com</span>
+          <a class="contact link" href="https://veersheth.medium.com/" target="_blank" rel="noopener noreferrer">Blog</a>
+          <a class="contact link" href="https://github.com/veersheth" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="contact link" href="https://linkedin.com/in/veersheth" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <span class="email-text" role="button" tabindex="0">veerksheth [at] gmail [dot] com</span>
         </div>
       </div>
     </div>
@@ -30,7 +35,7 @@
         <div class="experience-card">
           <div class="experience-card-header">
             <div class="experience-card-title">Casual Academic</div>
-            <div class="experience-card-date">Sep 2025 – Present</div>
+            <div class="experience-card-date">Sep 2025 - Present</div>
           </div>
           <div class="experience-card-company highlight">UNSW School of Computer Science and Engineering</div>
         </div>
@@ -48,30 +53,30 @@
       <div class="projects">
         <div class="heading">Projects</div>
         <div class="projects-list">
-          <div class="project-card" data-skills="Tauri,Rust,Svelte,Figma" data-url="https://github.com/veersheth/quarry">
+          <a class="project-card" href="https://github.com/veersheth/quarry" target="_blank" rel="noopener noreferrer" data-skills="Tauri,Rust,Svelte,Figma">
             <div class="project-card-title">Quarry</div>
-            <div class="project-card-description">Centralized app launcher, clipboard manager, calculator, file searcher, color picker, currency converter, AI interface, shortcut manager, rofi replacement, dictionary for Linux.</div>
+            <div class="project-card-description">A rofi replacement for Linux: app launcher, clipboard manager, calculator, file search, color picker, currency converter, AI interface, shortcut manager and dictionary in one.</div>
             <div class="project-card-skills">Tauri, Rust, Svelte, Figma</div>
-          </div>
-          <div class="project-card" data-skills="Python,OpenCV" data-url="https://github.com/veersheth/wayland-face-cursor">
+          </a>
+          <a class="project-card" href="https://github.com/veersheth/wayland-face-cursor" target="_blank" rel="noopener noreferrer" data-skills="Python,OpenCV">
             <div class="project-card-title">wayland-face-cursor</div>
             <div class="project-card-description">Facial recognition cursor control for Wayland. Uses a webcam feed to track head position and translate it to pointer movement on Hyprland.</div>
             <div class="project-card-skills">Python, OpenCV</div>
-          </div>
-          <div class="project-card" data-skills="Python,PySide6" data-url="https://github.com/veersheth/hypr-settings">
+          </a>
+          <a class="project-card" href="https://github.com/veersheth/hypr-settings" target="_blank" rel="noopener noreferrer" data-skills="Python,PySide6">
             <div class="project-card-title">Hypr-settings</div>
             <div class="project-card-description">Settings panel for the Hyprland window manager, unifying Wi-Fi, Bluetooth, display, sound, appearance, and system controls in a single GUI. CLI flags to open directly to any tab for keybind daemon integration.</div>
             <div class="project-card-skills">Python, PySide6</div>
-          </div>
-          <div class="project-card" data-skills="Flutter,Dart" data-url="https://github.com/veersheth/meditator">
+          </a>
+          <a class="project-card" href="https://github.com/veersheth/meditator" target="_blank" rel="noopener noreferrer" data-skills="Flutter,Dart">
             <div class="project-card-title">Meditator</div>
             <div class="project-card-description">A minimal timer based meditation app that gamifies the activity. Points are scored when completing a meditation and lost when abandoned.</div>
             <div class="project-card-skills">Flutter, Dart</div>
-          </div>
+          </a>
         </div>
         <div class="projects-controls">
-          <button class="projects-btn projects-prev">←</button>
-          <button class="projects-btn projects-next">→</button>
+          <button class="projects-btn projects-prev" aria-label="Previous project">←</button>
+          <button class="projects-btn projects-next" aria-label="Next project">→</button>
         </div>
       </div>
 
@@ -120,9 +125,7 @@
       </div>
     </div>
 
-
     <div class="footer">2026</div>
-    <script src="https://unpkg.com/matter-js@0.19.0/build/matter.min.js"></script>
-<script src="script.js"></script>
+    <script src="script.js" defer></script>
   </body>
 </html>
