@@ -228,18 +228,12 @@ emailEl.addEventListener('click', () => {
 
 const allPills = document.querySelectorAll('.pill');
 
-function randomRotation() {
-  const mag = 1 + Math.random() * 2;
-  return Math.random() < 0.5 ? mag : -mag;
-}
-
 document.querySelectorAll('.project-card').forEach((card, i) => {
   card.addEventListener('click', () => {
     if (card.dataset.url) window.open(card.dataset.url, '_blank');
   });
 
   card.addEventListener('mouseenter', () => {
-    card.style.transform = `rotate(${randomRotation()}deg)`;
     const skills = card.dataset.skills.split(',').map(s => s.trim());
     allPills.forEach(pill => {
       if (skills.includes(pill.textContent.trim())) {
@@ -305,3 +299,37 @@ const emailOriginal = emailEl.textContent;
 emailEl.addEventListener('mouseenter', () => scrambleTo(emailEl, 'COPY COPY COPY COPY COPY COPY'));
 emailEl.addEventListener('mouseleave', () => scrambleTo(emailEl, emailOriginal));
 emailEl.addEventListener('click', () => scrambleTo(emailEl,      '✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓'));
+
+
+const IDLE_SELECTOR = [
+  '.name',
+  '.links a',
+  '.email-text',
+  '.heading',
+  '.experience-card-title',
+  '.experience-card-date',
+  '.experience-card-company',
+  '.project-card-title',
+  '.project-card-skills',
+  '.pill',
+].join(', ');
+
+const idleEls = [...document.querySelectorAll(IDLE_SELECTOR)].map(el => ({
+  el,
+  original: el.textContent,
+}));
+
+function idleScramble() {
+  if (!isFalling && !document.hidden) {
+    const count = 1 + Math.floor(Math.random() * 3); // 1-3 elements at a time
+    for (let i = 0; i < count; i++) {
+      const { el, original } = idleEls[Math.floor(Math.random() * idleEls.length)];
+      const busy = el._cancelScramble || el.matches(':hover');
+      const changed = el.textContent !== original;
+      if (!busy && !changed) scrambleTo(el, original);
+    }
+  }
+  setTimeout(idleScramble, 500 + Math.random() * 1800);
+}
+
+setTimeout(idleScramble, 2500);
