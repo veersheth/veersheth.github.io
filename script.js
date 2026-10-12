@@ -1,7 +1,8 @@
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const SCRAMBLE_CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&*-+<>';
 
-// ---------- Carousel ----------
+// card based movement for projects on mobile
+//
 const projectsList = document.querySelector('.projects-list');
 const scrollProjects = (dir) => {
   const card = projectsList.querySelector('.project-card');
@@ -10,9 +11,13 @@ const scrollProjects = (dir) => {
 document.querySelector('.projects-prev').addEventListener('click', () => scrollProjects(-1));
 document.querySelector('.projects-next').addEventListener('click', () => scrollProjects(1));
 
-// ---------- Scramble setup ----------
-// Capture originals BEFORE any scrambling starts. The visible text lives in an
-// aria-hidden span; a visually hidden copy keeps the real text for screen readers.
+//
+//          
+//          SCRAMBLE
+//
+//
+// capture originals on webpage load
+//
 function prepare(el) {
   if (!el || el._vis) return;
   const original = el.textContent;
@@ -42,6 +47,7 @@ const SCRAMBLE_SELECTOR = [
 ].join(', ');
 
 const scrambleEls = [...document.querySelectorAll(SCRAMBLE_SELECTOR)];
+
 scrambleEls.forEach(prepare);
 
 function scrambleTo(el, target, delay = 0) {
@@ -71,7 +77,7 @@ function scrambleTo(el, target, delay = 0) {
   el._cancelScramble = () => { clearTimeout(timeout); clearInterval(interval); };
 }
 
-// Scramble on load
+// scramble on load
 if (!reduceMotion) {
   [
     document.querySelector('.name'),
@@ -81,7 +87,7 @@ if (!reduceMotion) {
   ].forEach((el, i) => { if (el) scrambleTo(el, el._original, i * 100); });
 }
 
-// Scramble to uppercase on hover/focus
+// scramble to uppercase on hover  (links)
 document.querySelectorAll('.links a, .project-card-title, .email-text').forEach(el => {
   const upper = el._original.toUpperCase();
   const on = () => scrambleTo(el, upper);
@@ -94,7 +100,8 @@ document.querySelectorAll('.links a, .project-card-title, .email-text').forEach(
   }
 });
 
-// ---------- Email copy ----------
+
+// copy email
 const emailEl = document.querySelector('.email-text');
 const EMAIL = ['veerksheth', 'gmail.com'].join('@');
 
@@ -112,7 +119,8 @@ const emailRestore = () => scrambleTo(emailEl, emailEl._original);
 emailEl.addEventListener('mouseleave', emailRestore);
 emailEl.addEventListener('blur', emailRestore);
 
-// ---------- Project card -> pill highlighting ----------
+
+// highlight project skill pills
 const allPills = document.querySelectorAll('.pill');
 const cards = document.querySelectorAll('.project-card');
 
@@ -141,7 +149,9 @@ document.addEventListener('touchstart', (e) => {
   if (!e.target.closest('.project-card')) clearHighlight();
 }, { passive: true });
 
-// ---------- Idle scramble ----------
+
+
+// scramble randomly on idle
 function idleScramble() {
   if (!document.hidden) {
     const count = 1 + Math.floor(Math.random() * 3);
