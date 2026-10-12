@@ -82,7 +82,7 @@ if (!reduceMotion) {
 }
 
 // Scramble to uppercase on hover/focus
-document.querySelectorAll('.links a, .project-card-title').forEach(el => {
+document.querySelectorAll('.links a, .project-card-title, .email-text').forEach(el => {
   const upper = el._original.toUpperCase();
   const on = () => scrambleTo(el, upper);
   const off = () => scrambleTo(el, el._original);
@@ -100,7 +100,7 @@ const EMAIL = ['veerksheth', 'gmail.com'].join('@');
 
 function copyEmail() {
   navigator.clipboard.writeText(EMAIL)
-    .then(() => scrambleTo(emailEl, '✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓'))
+    .then(() => scrambleTo(emailEl, 'COPIED TO CLIPBOARD COPIED TO CLIPBOARD'))
     .catch(() => scrambleTo(emailEl, 'COPY FAILED'));
 }
 
@@ -108,10 +108,7 @@ emailEl.addEventListener('click', copyEmail);
 emailEl.addEventListener('keydown', (e) => {
   if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); copyEmail(); }
 });
-const emailHint = () => scrambleTo(emailEl, 'COPY COPY COPY COPY COPY COPY');
 const emailRestore = () => scrambleTo(emailEl, emailEl._original);
-emailEl.addEventListener('mouseenter', emailHint);
-emailEl.addEventListener('focus', emailHint);
 emailEl.addEventListener('mouseleave', emailRestore);
 emailEl.addEventListener('blur', emailRestore);
 

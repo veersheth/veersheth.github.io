@@ -31,7 +31,7 @@
   --l-font-size: 15px;
   --font: 'IoskeleyMono', monospace;
   --accent: rgb(229, 229, 97);
-  --radius: 16px;
+  --radius: 12px;
 
   /* --font-color: rgb(0, 0, 0); */
   /* --background: rgb(237, 237, 237); */
@@ -331,6 +331,7 @@ body {
 .links a:hover,
 .links a:focus-visible,
 .links button:hover,
+.email-text:hover,
 .links button:focus-visible {
   color: var(--accent);
 }
