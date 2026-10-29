@@ -39,7 +39,7 @@ const SCRAMBLE_SELECTOR = [
   '.email-text',
   '.heading',
   '.experience-card-title',
-  '.experience-card-date',
+  '.experience-card-date:not(:has(span)), .experience-card-date > span',
   '.experience-card-company',
   '.project-card-title',
   '.project-card-skills',
