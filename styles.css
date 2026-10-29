@@ -444,10 +444,6 @@ body {
   white-space: nowrap;
 }
 
-.experience-card-date .highlight {
-  font-style: italic;
-}
-
 .experience-card-company {
   font-size: 13px;
   letter-spacing: 0.02em;
