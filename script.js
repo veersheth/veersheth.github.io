@@ -1,6 +1,31 @@
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const SCRAMBLE_CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&*-+<>';
 
+const themeToggle = document.querySelector('.theme-toggle');
+const themeMedia = window.matchMedia('(prefers-color-scheme: dark)');
+let themeOverride = null;
+try {
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'light' || savedTheme === 'dark') themeOverride = savedTheme;
+} catch { /* Storage may be unavailable. */ }
+
+function applyTheme(theme) {
+  document.documentElement.dataset.theme = theme;
+  themeToggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+}
+
+applyTheme(themeOverride || (themeMedia.matches ? 'dark' : 'light'));
+
+themeToggle.addEventListener('click', () => {
+  themeOverride = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+  applyTheme(themeOverride);
+  try { localStorage.setItem('theme', themeOverride); } catch { /* The toggle still works for this visit. */ }
+});
+
+themeMedia.addEventListener('change', () => {
+  if (!themeOverride) applyTheme(themeMedia.matches ? 'dark' : 'light');
+});
+
 // card based movement for projects on mobile
 //
 const projectsList = document.querySelector('.projects-list');
