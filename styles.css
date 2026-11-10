@@ -1,25 +1,3 @@
-@font-face {
-  font-family: 'JetBrains Mono';
-  src: url('fonts/JetBrainsMono-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'JetBrains Mono';
-  src: url('fonts/JetBrainsMono-Medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'JetBrains Mono';
-  src: url('fonts/JetBrainsMono-ExtraBold.woff2') format('woff2');
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -30,11 +8,11 @@
   color-scheme: light;
   --font-size: 15px;
   --l-font-size: 15px;
-  --font: 'JetBrains Mono', monospace;
+  --font: monospace;
   --accent: #665800;
   --accent-surface: #e5e561;
   --on-accent: #141414;
-  --radius: 12px;
+  --radius: 4px;
   --font-color: #242424;
   --background: #f2f2f2;
   --surface: #ffffff;
@@ -129,7 +107,7 @@ body {
   width: 36px;
   height: 36px;
   border: 1px solid var(--border-color);
-  border-radius: 50%;
+  border-radius: var(--radius);
   background: var(--surface);
   color: var(--accent);
   cursor: pointer;
@@ -218,7 +196,7 @@ body {
 
 .name {
   font-size: 2rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 800;
   white-space: nowrap;
   opacity: 0.75;
@@ -269,8 +247,8 @@ body {
   color: var(--font-color);
   background: none;
   cursor: pointer;
-  padding: 6px 14px;
-  border-radius: 50px;
+  padding: 5px 12px;
+  border-radius: var(--radius);
   border: 1px solid var(--border-color);
   transition: border-color 0.1s ease;
 }
@@ -283,7 +261,7 @@ body {
 .project-card {
   flex: 0 0 88%;
   scroll-snap-align: start;
-  padding: 28px 32px;
+  padding: 24px 28px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -339,7 +317,7 @@ body {
   font-family: var(--font);
   font-size: var(--font-size);
   font-weight: 400;
-  padding: 8px 16px;
+  padding: 6px 12px;
   border: 1px solid var(--border-color);
   background: var(--surface);
   border-radius: var(--radius);
@@ -423,7 +401,7 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 16px 24px;
-  padding: 24px 28px;
+  padding: 20px 24px;
   border: 1px solid var(--border-color);
   background: var(--surface);
   border-radius: var(--radius);
@@ -463,7 +441,7 @@ body {
 }
 
 .experience-card {
-  padding: 24px 28px;
+  padding: 20px 24px;
   display: flex;
   flex-direction: column;
   gap: 10px;
